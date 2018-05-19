@@ -6,13 +6,14 @@
 package byui.cit260.PioneerTrail.model;
 
 import java.awt.Point;
+import java.io.Serializable;
 
 
 /**
  *
  * @author MMG
  */
-public enum Actor {
+public enum Actors implements Serializable{
     
     JohnSmith("John Smith", "He is the best friend of the main character", new Point(1, 1)),
     MaryJones("Mary Jones", "She is the sister of the main character", new Point(0, 1)),
@@ -22,11 +23,11 @@ public enum Actor {
     GaryRoberts("Gary Roberts", "He is a neighbor of the main character", new Point(1, 1)),
     IvyFoster("Ivy Foster", "She is Gary Roberts wife", new Point (1, 1));
     
-    private String name; 
-    private String description;
-    private Point coordinates;
+    private final String name; 
+    private final String description;
+    private final Point coordinates;
     
-    Actor(String name, String description, Point coordinates) {
+    Actors(String name, String description, Point coordinates) {
         this.name = name;
         this.description = description;
         this.coordinates = coordinates;

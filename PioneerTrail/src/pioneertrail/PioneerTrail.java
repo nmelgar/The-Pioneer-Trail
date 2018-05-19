@@ -5,7 +5,7 @@
  */
 package pioneertrail;
 
-import byui.cit260.PioneerTrail.model.Actor;
+import byui.cit260.PioneerTrail.model.Actors;
 import byui.cit260.PioneerTrail.model.Player;
 
 /**

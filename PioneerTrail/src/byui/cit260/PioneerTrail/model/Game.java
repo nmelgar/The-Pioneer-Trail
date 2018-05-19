@@ -18,17 +18,6 @@ public class Game implements Serializable {
     private String resources;
     private String wagon;
     private String attribute;
-    private ArrayList<Game> games = new ArrayList<Game>();
-
-    
-    public ArrayList<Game> getGames() {
-        return games;
-    }
-
-    public void setGames(ArrayList<Game> games) {
-        this.games = games;
-    }
-
     
     
     public Player getPlayer() {
