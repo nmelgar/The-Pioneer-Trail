@@ -19,7 +19,7 @@ public class PioneerTrail {
      */
     public static void main(String[] args) {
       Player playerOne = new Player();
-      
+                  
       playerOne.setName("Peter Parker");
       playerOne.setAge(25);
       playerOne.setGender("Male");
@@ -30,7 +30,11 @@ public class PioneerTrail {
       String playerOneGender = playerOne.getGender();
       float playerOneHealth = playerOne.getHealth();
       
-     System.out.println(playerOne.toString());     
+      Actors.JohnSmith.getName();
+      Actors.JohnSmith.getDescription();
+      
+     System.out.println(playerOne.toString()); 
+     System.out.println(Actors.JohnSmith);
      
     }
     
