@@ -5,6 +5,9 @@
  */
 package pioneertrail;
 
+import byui.cit260.PioneerTrail.model.Actor;
+import byui.cit260.PioneerTrail.model.Player;
+
 /**
  *
  * @author MMG
@@ -15,7 +18,20 @@ public class PioneerTrail {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+      Player playerOne = new Player();
+      
+      playerOne.setName("Peter Parker");
+      playerOne.setAge(25);
+      playerOne.setGender("Male");
+      playerOne.setHealth(100);
+      
+      String playerOneName = playerOne.getName();
+      double playerOneAge = playerOne.getAge();
+      String playerOneGender = playerOne.getGender();
+      float playerOneHealth = playerOne.getHealth();
+      
+     System.out.println(playerOne.toString());     
+     
     }
     
 }
