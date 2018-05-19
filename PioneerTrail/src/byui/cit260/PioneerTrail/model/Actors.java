@@ -26,11 +26,12 @@ public enum Actors implements Serializable{
     private final String name; 
     private final String description;
     private final Point coordinates;
-    
-    Actors(String name, String description, Point coordinates) {
+
+    private Actors(String name, String description, Point coordinates) {
         this.name = name;
         this.description = description;
         this.coordinates = coordinates;
+        
     }
 
     public String getName() {
@@ -47,10 +48,15 @@ public enum Actors implements Serializable{
 
     @Override
     public String toString() {
-        return "Actor{" + "name=" + name + ", description="
-                + description + ", coordinates=" + coordinates + '}';
+        return "Actors{" + "name=" + name + ", description=" + description + ", coordinates=" + coordinates + '}';
     }
-    
+
+    public void setName(String john_Smith) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+   
     
     
 }
+    
+    

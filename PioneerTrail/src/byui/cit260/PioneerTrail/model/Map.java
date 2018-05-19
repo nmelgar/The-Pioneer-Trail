@@ -7,6 +7,7 @@ package byui.cit260.PioneerTrail.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Objects;
 
 /**
  *
@@ -21,8 +22,16 @@ public class Map implements Serializable {
     private int currentColumn;
     
      private ArrayList<Location> locations = new ArrayList<Location>();
+
+    public Map(Location currentLocation, int currentRow, int currentColumn) {
+        this.currentLocation = currentLocation;
+        this.currentRow = currentRow;
+        this.currentColumn = currentColumn;
+    }
     
-    public ArrayList<Location> getLocations() {
+    
+     
+     public ArrayList<Location> getLocations() {
         return locations;
     }
 
@@ -52,6 +61,48 @@ public class Map implements Serializable {
 
     public void setCurrentColumn(int currentColumn) {
         this.currentColumn = currentColumn;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 17 * hash + Objects.hashCode(this.currentLocation);
+        hash = 17 * hash + this.currentRow;
+        hash = 17 * hash + this.currentColumn;
+        hash = 17 * hash + Objects.hashCode(this.locations);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Map other = (Map) obj;
+        if (this.currentRow != other.currentRow) {
+            return false;
+        }
+        if (this.currentColumn != other.currentColumn) {
+            return false;
+        }
+        if (!Objects.equals(this.currentLocation, other.currentLocation)) {
+            return false;
+        }
+        if (!Objects.equals(this.locations, other.locations)) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Map{" + "currentLocation=" + currentLocation + ", currentRow=" + currentRow + ", currentColumn=" + currentColumn + ", locations=" + locations + '}';
     }
  
     

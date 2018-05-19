@@ -20,6 +20,16 @@ public class Player implements Serializable {
     private double age;
     private float health; 
     private ArrayList<Game> games = new ArrayList<Game>();
+
+    public Player(String gender, String name, double age, float health) {
+        this.gender = gender;
+        this.name = name;
+        this.age = age;
+        this.health = health;
+    }
+    
+    
+    
     
     public ArrayList<Game> getGames() {
         return games;

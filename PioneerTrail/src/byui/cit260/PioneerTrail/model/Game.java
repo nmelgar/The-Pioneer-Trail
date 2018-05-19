@@ -6,6 +6,7 @@
 package byui.cit260.PioneerTrail.model;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Objects;
 
 /**
  *
@@ -18,8 +19,15 @@ public class Game implements Serializable {
     private String resources;
     private String wagon;
     private String attribute;
-    
-    
+
+    public Game(Player player, Map map, String resources, String wagon, String attribute) {
+        this.player = player;
+        this.map = map;
+        this.resources = resources;
+        this.wagon = wagon;
+        this.attribute = attribute;
+    }
+
     public Player getPlayer() {
         return player;
     }
@@ -59,7 +67,53 @@ public class Game implements Serializable {
     public void setAttribute(String attribute) {
         this.attribute = attribute;
     }
-    
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 13 * hash + Objects.hashCode(this.player);
+        hash = 13 * hash + Objects.hashCode(this.map);
+        hash = 13 * hash + Objects.hashCode(this.resources);
+        hash = 13 * hash + Objects.hashCode(this.wagon);
+        hash = 13 * hash + Objects.hashCode(this.attribute);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Game other = (Game) obj;
+        if (!Objects.equals(this.resources, other.resources)) {
+            return false;
+        }
+        if (!Objects.equals(this.wagon, other.wagon)) {
+            return false;
+        }
+        if (!Objects.equals(this.attribute, other.attribute)) {
+            return false;
+        }
+        if (!Objects.equals(this.player, other.player)) {
+            return false;
+        }
+        if (!Objects.equals(this.map, other.map)) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Game{" + "player=" + player + ", map=" + map + ", resources=" + resources + ", wagon=" + wagon + ", attribute=" + attribute + '}';
+    }
+
     
     
     
