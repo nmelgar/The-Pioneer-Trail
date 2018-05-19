@@ -11,6 +11,7 @@ import java.util.Objects;
 /**
  *
  * @author MMG
+ *Wagner Filgueiras
  */
 public class Location implements Serializable{
     
@@ -50,10 +51,10 @@ public class Location implements Serializable{
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 79 * hash + Objects.hashCode(this.scene);
-        hash = 79 * hash + Objects.hashCode(this.visited);
-        hash = 79 * hash + Objects.hashCode(this.position);
+        int hash = 5;
+        hash = 43 * hash + Objects.hashCode(this.scene);
+        hash = 43 * hash + Objects.hashCode(this.visited);
+        hash = 43 * hash + Objects.hashCode(this.position);
         return hash;
     }
 
@@ -85,7 +86,7 @@ public class Location implements Serializable{
     public String toString() {
         return "Location{" + "scene=" + scene + ", visited=" + visited + ", position=" + position + '}';
     }
-
+    
    
     
 
