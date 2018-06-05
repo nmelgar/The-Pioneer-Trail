@@ -6,6 +6,7 @@
 package pioneertrail;
 
 import byui.cit260.PioneerTrail.model.Actors;
+import byui.cit260.PioneerTrail.model.Location;
 import byui.cit260.PioneerTrail.model.Player;
 
 /**
@@ -17,6 +18,7 @@ public class PioneerTrail {
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
       Player playerOne = new Player();
                   
@@ -30,13 +32,19 @@ public class PioneerTrail {
       String playerOneGender = playerOne.getGender();
       float playerOneHealth = playerOne.getHealth();
       
-      
+     
+                  
       Actors.JohnSmith.getName();
       Actors.JohnSmith.getDescription();
       
      System.out.println(playerOne.toString()); 
      System.out.println(Actors.JohnSmith);
+  
      
     }
+    public static void NefiMelgar(){
+        
+            }   
+      
     
 }
