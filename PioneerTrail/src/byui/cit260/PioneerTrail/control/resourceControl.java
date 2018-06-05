@@ -12,4 +12,3 @@ package byui.cit260.PioneerTrail.control;
 public class resourceControl {
     trying to commit 
 }
-try 
