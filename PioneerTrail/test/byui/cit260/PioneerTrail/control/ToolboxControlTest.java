@@ -5,7 +5,7 @@
  */
 package byui.cit260.PioneerTrail.control;
 
-import byui.cit260.PioneerTrail.model.ResourceItem;
+import byui.cit260.PioneerTrail.model.Resource;
 import byui.cit260.PioneerTrail.model.Toolbox;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -45,10 +45,10 @@ public class ToolboxControlTest {
     @Test
     public void testCalcMaxWeight() {
         System.out.println("CalcMaxWeight");
-        ResourceItem resourceItem = null;
+        Resource resource = null;
         Toolbox toolboxVolume = null;
         int expResult = 0;
-        int result = ToolboxControl.CalcMaxWeight(resourceItem, toolboxVolume);
+        int result = ToolboxControl.CalcMaxWeight(resource, toolboxVolume);
         assertEquals(expResult, result);
         
     }
