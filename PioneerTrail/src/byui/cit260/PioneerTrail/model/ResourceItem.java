@@ -14,12 +14,19 @@ import java.io.Serializable;
  */
 public class ResourceItem implements Serializable{
 
-        private final double weight;
-
-    public ResourceItem(double weight) {
+        private double weight;
+        
+    /**
+     *
+     * @return
+     */
+    public double getweight(){
+    return weight;
+    }
+    
+    public void ResourceItem(double weight) {
         this.weight = weight;
     }
 
-      
     
 }
