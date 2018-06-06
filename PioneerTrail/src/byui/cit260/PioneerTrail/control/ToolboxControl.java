@@ -14,10 +14,9 @@ import byui.cit260.PioneerTrail.model.Toolbox;
  */
 public class ToolboxControl {
 
-    private static int ResourceItem;
 
     
-    public static int CalcMaxWeight(ResourceItem resourceItem, Toolbox toolboxVolume) {
+    public static int CalcMaxWeight(ResourceItem resourceItem, Toolbox toolbox) {
         int height = 70;
         int leight = 80;
         int breadth = 40;
