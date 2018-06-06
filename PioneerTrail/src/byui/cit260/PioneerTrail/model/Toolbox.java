@@ -13,10 +13,33 @@ import java.io.Serializable;
  */
 public class Toolbox implements Serializable{
     
-    private final int volume;
+    
+    private int lenght;
+    private int bredth;
+    private int height;
 
-    public Toolbox(int volume) {
-        this.volume = volume;
+    public int getLenght() {
+        return lenght;
+    }
+
+    public int getBredth() {
+        return bredth;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setLenght(int lenght) {
+        this.lenght = lenght;
+    }
+
+    public void setBredth(int bredth) {
+        this.bredth = bredth;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
     }
     
     

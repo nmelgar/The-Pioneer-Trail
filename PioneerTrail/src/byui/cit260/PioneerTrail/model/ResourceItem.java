@@ -20,7 +20,7 @@ public class ResourceItem implements Serializable{
      *
      * @return
      */
-    public double getweight(){
+    public double getWeight(){
     return weight;
     }
     
