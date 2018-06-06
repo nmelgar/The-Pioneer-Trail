@@ -45,9 +45,9 @@ public class ToolboxControlTest {
     @Test
     public void testCalcMaxWeight() {
         System.out.println("CalcMaxWeight");
-        Resource resource = null;
-        Toolbox toolboxVolume = null;
-        int expResult = 0;
+        int resource = 8;
+        int toolboxVolume = 210000;
+        int expResult = 210008;
         int result = ToolboxControl.CalcMaxWeight(resource, toolboxVolume);
         assertEquals(expResult, result);
         
