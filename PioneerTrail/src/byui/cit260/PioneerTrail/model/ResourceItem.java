@@ -14,7 +14,7 @@ import java.io.Serializable;
  */
 public class ResourceItem implements Serializable{
 
-        private double weight;
+        private final double weight;
 
     public ResourceItem(double weight) {
         this.weight = weight;
