@@ -24,12 +24,12 @@ public class ToolboxControl {
         
                 
         int Toolbox = leight * breadth * height ;
-        if (ResourceItem > 350 || ResourceItem < 0) {
+        if (resourceItem > 350 || resourceItem < 0) {
             return -1;
         }
         
         int maxWeight;
-        maxWeight = ResourceItem + Toolbox;
+        maxWeight = resourceItem + toolbox;
         
         return maxWeight;
         
