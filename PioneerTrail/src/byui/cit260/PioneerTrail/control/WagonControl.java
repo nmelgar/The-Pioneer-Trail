@@ -34,11 +34,11 @@ public class WagonControl {
        // not for the total number of resources at wagon
        double newTotalWeight = totalResourceWeight + wagon.getWeight() ;
     
-    return newTotalWeight;    
+    return newTotalWeight;
+    
+    
     
     
     }
-    
-      
     
 }

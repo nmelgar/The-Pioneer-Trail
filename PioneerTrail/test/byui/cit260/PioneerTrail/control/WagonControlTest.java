@@ -98,7 +98,5 @@ public class WagonControlTest {
         System.out.println("Results = " + result);            
         assertEquals(expResult, result, 0.0);
     }
-
-      
     
 }

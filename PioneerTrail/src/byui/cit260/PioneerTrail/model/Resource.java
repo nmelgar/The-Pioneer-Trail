@@ -15,15 +15,11 @@ import java.util.Objects;
 public class Resource implements Serializable{
     
     private String name;
-    private int energyValue;
+    private Float energyValue;
     private int weight;
     private String type;
     private int count;
-    private double resourceTotalEnergy;
 
-    
-    
-    
     /**
      * Get the value of count
      *
@@ -46,26 +42,13 @@ public class Resource implements Serializable{
     }
 
     
-    
-    public double getResourceTotalEnergy() {
-        return resourceTotalEnergy;
-    }
 
-    public void setResourceTotalEnergy(double resourceTotalEnergy) {
-        this.resourceTotalEnergy = resourceTotalEnergy;
-    }
-
-    
-    
-
-    public Resource(String name, int energyValue, 
-            int weight, String type, double resourceTotalEnergy) {
+    public Resource(String name, Float energyValue, int weight, String type) {
         
         this.name = name;
         this.energyValue = energyValue;
         this.weight = weight;
         this.type = type;
-        this.resourceTotalEnergy = resourceTotalEnergy;
     }
     
     
@@ -78,11 +61,11 @@ public class Resource implements Serializable{
         this.name = name;
     }
 
-    public int getEnergyValue() {
+    public Float getEnergyValue() {
         return energyValue;
     }
 
-    public void setEnergyValue(int energyValue) {
+    public void setEnergyValue(Float energyValue) {
         this.energyValue = energyValue;
     }
 
@@ -109,7 +92,6 @@ public class Resource implements Serializable{
         hash = 89 * hash + Objects.hashCode(this.energyValue);
         hash = 89 * hash + Objects.hashCode(this.weight);
         hash = 89 * hash + Objects.hashCode(this.type);
-       
         return hash;
     }
 
@@ -144,16 +126,7 @@ public class Resource implements Serializable{
     public String toString() {
         return "Resources{" + "name=" + name + ", energyValue=" + energyValue + ", weight=" + weight + ", type=" + type + '}';
     }
-
-    public void getEnergyValue(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void getEnergyValue(double i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-                
+            
     
     
 }
