@@ -22,7 +22,8 @@ public class ToolboxControl {
         int bredth = 40;
         */
                 
-        int toolboxVolume = toolbox.getLenght() * toolbox.getBredth() * toolbox.getHeight();
+        int toolboxVolume = toolbox.getLenght() * 
+                toolbox.getBredth() * toolbox.getHeight();
         
         if (toolboxVolume > 350 || toolboxVolume < 0) {
             return -1;

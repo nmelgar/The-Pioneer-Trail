@@ -5,8 +5,6 @@
  */
 package byui.cit260.PioneerTrail.control;
 
-import byui.cit260.PioneerTrail.model.Resource;
-import byui.cit260.PioneerTrail.model.Toolbox;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
