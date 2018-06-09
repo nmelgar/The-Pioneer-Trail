@@ -7,7 +7,6 @@ package byui.cit260.PioneerTrail.control;
 
 import byui.cit260.PioneerTrail.model.Toolbox;
 import byui.cit260.PioneerTrail.model.Resource;
-import org.junit.Assert;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
