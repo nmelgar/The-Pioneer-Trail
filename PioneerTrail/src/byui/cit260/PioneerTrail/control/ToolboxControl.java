@@ -13,23 +13,21 @@ import byui.cit260.PioneerTrail.model.Toolbox;
  * @author po
  */
 public class ToolboxControl {
-
-
     
-    public static int CalcMaxWeight(Resource resource, Toolbox toolbox) {
+    public static double calcMaxWeight(Resource resource, Toolbox toolbox) {
       /*  int height = 70;
         int lenght = 80;
         int bredth = 40;
         */
                 
-        int toolboxVolume = toolbox.getLenght() * 
-                toolbox.getBredth() * toolbox.getHeight();
+        double toolboxVolume = toolbox.getLenght() * 
+                toolbox.getBreadth() * toolbox.getHeight();
         
-        if (toolboxVolume > 350 || toolboxVolume < 0) {
+        if (toolboxVolume > 350 || toolboxVolume <= 0) {
             return -1;
         }
         
-        int maxWeight = resource.getWeight() + toolboxVolume;
+        double maxWeight = resource.getWeight() + toolboxVolume;
         
         return maxWeight;
         
