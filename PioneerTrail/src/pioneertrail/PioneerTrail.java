@@ -6,8 +6,10 @@
 package pioneertrail;
 
 import byui.cit260.PioneerTrail.model.Actors;
+import byui.cit260.PioneerTrail.model.Game;
 import byui.cit260.PioneerTrail.model.Location;
 import byui.cit260.PioneerTrail.model.Player;
+import byui.cit260.PioneerTrail.view.StartProgramView;
 
 /**
  *
@@ -18,33 +20,31 @@ public class PioneerTrail {
     /**
      * @param args the command line arguments
      */
+    private static Player player;
+    private static Game game;
+
+    public static Player getPlayer() {
+        return player;
+    }
+
+    public static void setPlayer(Player player) {
+        PioneerTrail.player = player;
+    }
+
+    public static Game getGame() {
+        return game;
+    }
+
+    public static void setGame(Game game) {
+        PioneerTrail.game = game;
+    }
     
     public static void main(String[] args) {
-      Player playerOne = new Player();
-                  
-      playerOne.setName("Peter Parker");
-      playerOne.setAge(25);
-      playerOne.setGender("Male");
-      playerOne.setHealth(100);
       
-      String playerOneName = playerOne.getName();
-      double playerOneAge = playerOne.getAge();
-      String playerOneGender = playerOne.getGender();
-      float playerOneHealth = playerOne.getHealth();
-      
-     
-                  
-      Actors.JohnSmith.getName();
-      Actors.JohnSmith.getDescription();
-      
-     System.out.println(playerOne.toString()); 
-     System.out.println(Actors.JohnSmith);
-  
-     
-    }
-    public static void NefiMelgar(){
+        StartProgramView startProgramView = new StartProgramView();
+        startProgramView.displayStartProgramView();
         
-            }   
+    }   
       
     
 }

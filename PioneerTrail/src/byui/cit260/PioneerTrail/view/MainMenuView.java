@@ -6,13 +6,22 @@
 package byui.cit260.PioneerTrail.view;
 
 import byui.cit260.PioneerTrail.control.GameControl;
+import java.util.Scanner;
 import pioneertrail.PioneerTrail;
         
 
 /**
- *
- * @author MMG
- */
+ displayMainMenuView() {
+ endOfView = false
+ DO
+inputs = getInputs()
+IF no inputs were entered OR the first input is Q
+ RETURN
+ENDIF
+endOfView = doAction(inputs)
+WHILE endOfView != true
+}
+*/
 public class MainMenuView {
     
     public void displayMainMenuView(){
@@ -45,7 +54,7 @@ public class MainMenuView {
 
             System.out.println("\nMAIN MENU" +
                     "\n  N: Start new game" +
-                    "\n  L: Load existing game" +
+                    "\n  R: Restart existing game" +
                     "\n  H: Get help on how to play the game" +
                     "\n  E: Exit");
             
@@ -67,10 +76,13 @@ public class MainMenuView {
         switch(inputs[0].toUpperCase()) {
         case "N":
             startNewGame();
+            break;
         case "R":
-            restartGame();            
+            restartGame();
+            break;
         case "H":
             getHelp();
+            break;
         case "E":
             return true;
         default:
@@ -82,20 +94,23 @@ public class MainMenuView {
     
     private void startNewGame() {
         GameControl.createNewGame(PioneerTrail.getPlayer());
-        
+        /**
         GameMainView gameMainView = new GameMainView();
         gameMainView.displayGameViewMenu();
+        * */
     }
         
     private void restartGame() {
-        //Start existing game? The method's called "restart" game
-        //why not just call it "load"
+        System.out.println("Restarting game");
+        /**
         StartExistingGameView startExistingGameView = new StartExistingGameView();
-        startExistingGameView.displayStartExistingGameView();        
+        startExistingGameView.displayStartExistingGameView();    
+        * */
     }
     
     private void getHelp() {
-        HelpViewMenu helpViewMenu = new HelpViewMenu();
-        helpViewMenu.displayHelpMenuView();
+        
+        HelpMenuView helpMenuView = new HelpMenuView();
+        helpMenuView.displayHelpMenuView();        
     }
 }

@@ -5,6 +5,10 @@
  */
 package byui.cit260.PioneerTrail.control;
 
+import byui.cit260.PioneerTrail.model.Player;
+import pioneertrail.PioneerTrail;
+
+
 /**
  *
  * @author MMG
@@ -12,8 +16,18 @@ package byui.cit260.PioneerTrail.control;
 public class GameControl {
     
     public static Player savePlayer(String name){
-        System.out.println("*** savePlaer() called ***");
-        return new Player();
+        System.out.println("*** savePlayer() called ***");
+        Player player = new Player();
+        player.setName(name);
+        
+        PioneerTrail.setPlayer(player);
+        
+        return player;
     }
     
+    public static void createNewGame(Player player) {
+    System.out.println("Need to create new game Player = " + player.getName());
+    }
 }
+    
+
