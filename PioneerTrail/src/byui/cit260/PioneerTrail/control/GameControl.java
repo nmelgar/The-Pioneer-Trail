@@ -11,4 +11,9 @@ package byui.cit260.PioneerTrail.control;
  */
 public class GameControl {
     
+    public static Player savePlayer(String name){
+        System.out.println("*** savePlaer() called ***");
+        return new Player();
+    }
+    
 }
