@@ -94,11 +94,11 @@ public class MainMenuView {
     
     private void startNewGame() {
         GameControl.createNewGame(PioneerTrail.getPlayer());
-        /**
-        GameMainView gameMainView = new GameMainView();
-        gameMainView.displayGameViewMenu();
-        * */
-    }
+        
+        GameMenuView gameMenuView = new GameMenuView();
+        gameMenuView.displayGameMenuView();
+        
+        }
         
     private void restartGame() {
         System.out.println("Restarting game");
