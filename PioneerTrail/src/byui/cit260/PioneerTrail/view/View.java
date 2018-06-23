@@ -5,6 +5,8 @@
  */
 package byui.cit260.PioneerTrail.view;
 
+import java.util.Scanner;
+
 
 /**
  *
@@ -37,9 +39,13 @@ public abstract class View implements ViewInterface {
     }
     
     @override
-    public String getInputs(String promptMessage) {
+    public String[] getInputs(String promptMessage) {
     
+        Scanner reader = new Scanner(System.in);
+        String[] inputs = new String[1];
+        boolean valid = false;
     
          return inputs;
     }
+
 }
