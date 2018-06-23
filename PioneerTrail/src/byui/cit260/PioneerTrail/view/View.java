@@ -17,35 +17,53 @@ public abstract class View implements ViewInterface {
     public View() {
     }
     
-    @Override
-    public void display(){
-        
-         boolean endOfView = false;
-        
-        do {
-           
-            String[] inputs = this.getInputs();
+    protected String promptMessage;
 
-            if (inputs == null) {
-                return;
-            } else if ("E".equals(inputs[0].toUpperCase())) {
+    public View() {
+    }
+
+    public View(String menuPrompt) {
+        this.promptMessage = menuPrompt;
+    }
+
+    @Override
+    public void display() {
+        boolean endOfView = false;
+       
+        do {
+            String[] inputs = this.getInputs();
+            if (inputs == null){
+            return;
+            } else if ("E".equals(inputs[0].toUpperCase())){ }) {
                 return;
             }
 
             endOfView = doAction(inputs);
-            
-        } while (endOfView == false);
-        
-    }
-    
-    @override
-    public String[] getInputs(String promptMessage) {
-    
-        Scanner reader = new Scanner(System.in);
-        String[] inputs = new String[1];
-        boolean valid = false;
-    
-         return inputs;
+        } while (endOfView == true);
+
     }
 
+    @Override
+    public String getInputs() {
+        return getInput(promptMessage);
+    }
+
+    @Override
+    public String getInput(String promptMessage) {
+        Scanner reader = new Scanner(System.in);
+        String[] inputs = new String[1],
+        boolean valid = false;
+        String input = "";
+        while (valid == false) {
+            System.out.println(promptMessage);
+            input = reader.nextLine();
+            input = input.trim();
+            if (input.length() < 1) {
+                System.out.println("You must enter value");
+                continue;
+            }
+            valid = true;
+        }
+        return input;
+    }
 }

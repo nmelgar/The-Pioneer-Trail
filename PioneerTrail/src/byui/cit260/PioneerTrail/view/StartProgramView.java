@@ -32,7 +32,7 @@ WHILE endOfView != true
  * @author MMG
  */
 
-public class StartProgramView {
+public class StartProgramView extends View{
     
       public StartProgramView () {
            
