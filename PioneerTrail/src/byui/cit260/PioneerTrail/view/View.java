@@ -11,7 +11,11 @@ package byui.cit260.PioneerTrail.view;
  * @author MMG
  */
 public abstract class View implements ViewInterface {
+
+    public View() {
+    }
     
+    @Override
     public void display(){
         
          boolean endOfView = false;
@@ -30,5 +34,12 @@ public abstract class View implements ViewInterface {
             
         } while (endOfView == false);
         
+    }
+    
+    @override
+    public String getInputs(String promptMessage) {
+    
+    
+         return inputs;
     }
 }
