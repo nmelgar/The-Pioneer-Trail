@@ -22,7 +22,7 @@ endOfView = doAction(inputs)
 WHILE endOfView != true
 }
 */
-public class MainMenuView {
+public class MainMenuView extends View {
     
     public void displayMainMenuView(){
     

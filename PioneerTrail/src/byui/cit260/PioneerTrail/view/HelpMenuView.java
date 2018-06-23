@@ -20,7 +20,7 @@ WHILE endOfView != true
 }
 */
 
-public class HelpMenuView {
+public class HelpMenuView extends View {
     public void displayHelpMenuView(){
     
         boolean endOfView = false;
