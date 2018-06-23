@@ -9,6 +9,10 @@ package byui.cit260.PioneerTrail.view;
  *
  * @author MMG
  */
-public class ViewInterface {
+public interface ViewInterface {
     
+    public void display();
+    public String getInputs();
+    public String getInput(String promptMessage);
+    public boolean doAction(String inputs);
 }
