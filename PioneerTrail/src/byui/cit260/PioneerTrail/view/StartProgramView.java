@@ -74,7 +74,7 @@ public class StartProgramView extends View{
         while (endOfView = false);
     }
 
-    private String[] getInputs() {
+    public String[] getInputs() {
         //Gets input for main menu
 
         Scanner reader = new Scanner(System.in);

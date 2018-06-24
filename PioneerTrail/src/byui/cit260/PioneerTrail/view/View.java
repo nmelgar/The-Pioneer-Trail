@@ -14,28 +14,23 @@ import java.util.Scanner;
  */
 public abstract class View implements ViewInterface {
 
-    public View() {
-    }
-    
-    protected String promptMessage;
+   protected String promptMessage;
 
     public View() {
     }
 
-    public View(String menuPrompt) {
-        this.promptMessage = menuPrompt;
+    public View(String menusPrompt) {
+        this.promptMessage = menusPrompt;
     }
 
     @Override
     public void display() {
         boolean endOfView = false;
-       
+        String inputs;
         do {
-            String[] inputs = this.getInputs();
-            if (inputs == null){
-            return;
-            } else if ("E".equals(inputs[0].toUpperCase())){ }) {
-                return;
+            inputs = this.getInputs();
+            if (inputs == null || inputs.toUpperCase().equals("Q")) {
+                return; 
             }
 
             endOfView = doAction(inputs);
@@ -50,16 +45,15 @@ public abstract class View implements ViewInterface {
 
     @Override
     public String getInput(String promptMessage) {
-        Scanner reader = new Scanner(System.in);
-        String[] inputs = new String[1],
-        boolean valid = false;
+        Scanner scan;
+        scan = new Scanner(System.in);
         String input = "";
+        boolean valid = false;
         while (valid == false) {
             System.out.println(promptMessage);
-            input = reader.nextLine();
-            input = input.trim();
+            input = scan.nextLine();
             if (input.length() < 1) {
-                System.out.println("You must enter value");
+                System.out.println("You must enter a value");
                 continue;
             }
             valid = true;
