@@ -52,7 +52,7 @@ public class MainMenuView {
         
         while (valid == false) {
 
-            System.out.println("\nMAIN MENU" +
+            System.out.println("\nMAIN MENU, please choose and option: " +
                     "\n  N: Start new game" +
                     "\n  R: Restart existing game" +
                     "\n  H: Get help on how to play the game" +
