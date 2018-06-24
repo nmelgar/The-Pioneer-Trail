@@ -22,7 +22,7 @@ WHILE endOfView != true
 
 public class GameMenuView {
     public void displayGameMenuView(){
-    
+        
         boolean endOfView = false;
     
         do {
@@ -48,8 +48,8 @@ public class GameMenuView {
         boolean valid = false;
         
         while (valid == false) {
-
-            System.out.println("\nGame Menu" +
+            
+    System.out.println("\nGame Menu" +
                     "\n  V: View Map" +
                     "\n  I: View inventory items" +
                     "\n  P: Purchase new supplies" +

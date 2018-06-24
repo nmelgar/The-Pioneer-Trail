@@ -22,58 +22,20 @@ endOfView = doAction(inputs)
 WHILE endOfView != true
 }
 */
-public class MainMenuView {
+public class MainMenuView extends View {
     
-    public void displayMainMenuView(){
-    
-        boolean endOfView = false;
-    
-        do {
-            
-            String[] inputs = this.getInputs();
-
-            if (inputs == null) {
-                return;
-            } else if ("Q".equals(inputs[0].toUpperCase())) {
-                return;
-            }
-
-            endOfView = doAction(inputs);
-            
-        } while (endOfView == false);
-    
-   }
-
-    private String[] getInputs() {
-        
-        Scanner reader = new Scanner(System.in);
-        String[] inputs = new String[1];
-        boolean valid = false;
-        
-        while (valid == false) {
-
-            System.out.println("\nMAIN MENU, please choose and option: " +
+    public MainMenuView(){
+    System.out.println("\nMAIN MENU, please choose and option: " +
                     "\n  N: Start new game" +
                     "\n  R: Restart existing game" +
                     "\n  H: Get help on how to play the game" +
-                    "\n  Q: Exit");
-            
-            inputs[0] = reader.nextLine().trim();
-
-            if (inputs[0].length() < 1) {
-                System.out.println("You must specify a value");
-                continue;
-            }
-            
-            valid = true;
-        }
+                    "\n  Q: Exit");}   
+    
+    @Override
+    public boolean doAction(String inputs) {
         
-        return inputs;
-    }
-
-    private boolean doAction(String[] inputs) {
-        
-        switch(inputs[0].toUpperCase()) {
+    String menuOptions = inputs.toUpperCase();    
+    switch(menuOptions) {
         case "N":
             startNewGame();
             break;

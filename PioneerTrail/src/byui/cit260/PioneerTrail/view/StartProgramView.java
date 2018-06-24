@@ -35,7 +35,7 @@ WHILE endOfView != true
 public class StartProgramView extends View{
     
       public StartProgramView () {
-          super("*******************************************************************************************************************\n"
+          System.out.println("*******************************************************************************************************************\n"
             + "*    ____   _                                      ______              _  __ .\n"
             + "*   / __ \\ (_)____   ____   ___    ___   _____    /_  __/_____ ____ _(_)/ /  .\n"
             + "*  / /_/ // // __ \\ / __ \\ / _ \\  / _ \\ / ___/    / /  / ___// __ `// // /   .\n"
@@ -71,7 +71,7 @@ public class StartProgramView extends View{
                 + "===========================================================\n"
         );
         MainMenuView mainMenuView = new MainMenuView();
-        mainMenuView.displayMainMenuView();
+        mainMenuView.display();
         return true;
     } 
 }
