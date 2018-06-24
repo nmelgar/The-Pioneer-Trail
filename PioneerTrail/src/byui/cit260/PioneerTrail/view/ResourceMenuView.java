@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author po
  */
-public class ResourceMenuView extends View {
+public class ResourceMenuView {
     
     public void displayResourceMenuView() {
     

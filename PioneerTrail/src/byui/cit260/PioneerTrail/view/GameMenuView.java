@@ -20,7 +20,7 @@ WHILE endOfView != true
 }
 */
 
-public class GameMenuView extends View {
+public class GameMenuView {
     public void displayGameMenuView(){
     
         boolean endOfView = false;

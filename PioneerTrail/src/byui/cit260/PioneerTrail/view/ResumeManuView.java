@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author po
  */
-public class ResumeManuView extends View {
+public class ResumeManuView {
 
     public void displayResumeManuView(){
         

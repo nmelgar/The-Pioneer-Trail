@@ -22,7 +22,7 @@ endOfView = doAction(inputs)
 WHILE endOfView != true
 }
 */
-public class MainMenuView extends View {
+public class MainMenuView {
     
     public void displayMainMenuView(){
     
@@ -34,7 +34,7 @@ public class MainMenuView extends View {
 
             if (inputs == null) {
                 return;
-            } else if ("E".equals(inputs[0].toUpperCase())) {
+            } else if ("Q".equals(inputs[0].toUpperCase())) {
                 return;
             }
 
@@ -56,7 +56,7 @@ public class MainMenuView extends View {
                     "\n  N: Start new game" +
                     "\n  R: Restart existing game" +
                     "\n  H: Get help on how to play the game" +
-                    "\n  E: Exit");
+                    "\n  Q: Exit");
             
             inputs[0] = reader.nextLine().trim();
 
@@ -83,7 +83,7 @@ public class MainMenuView extends View {
         case "H":
             getHelp();
             break;
-        case "E":
+        case "Q":
             return true;
         default:
             System.out.println("Invalid input");

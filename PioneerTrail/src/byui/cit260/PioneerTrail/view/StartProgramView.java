@@ -35,11 +35,7 @@ WHILE endOfView != true
 public class StartProgramView extends View{
     
       public StartProgramView () {
-           
-    }
-      
-      public void displayStartProgramView() {
-        System.out.println("*******************************************************************************************************************\n"
+          super("*******************************************************************************************************************\n"
             + "*    ____   _                                      ______              _  __ .\n"
             + "*   / __ \\ (_)____   ____   ___    ___   _____    /_  __/_____ ____ _(_)/ /  .\n"
             + "*  / /_/ // // __ \\ / __ \\ / _ \\  / _ \\ / ___/    / /  / ___// __ `// // /   .\n"
@@ -51,77 +47,31 @@ public class StartProgramView extends View{
             + "* Before starting the journey of 1500 miles, you must buy a serie of items, .\n"
             + "* necessary for the trips, such as:  food, water, tools and other things.\n"
             + "* You will have a wagon to take items with you through the journey.\n"
-            + "******************************************************************************************************************************\n");
-
-        boolean endOfView = false;
-
-        do {
-            String[] inputs = this.getInputs();
-
-            if (inputs == null) {
-                return;
-            }
-            
-
-            else if ("Q".equals(inputs[0].toUpperCase())) {
-                return;
-            }
-            
-
-            endOfView = doAction(inputs);
-
-        }
-        while (endOfView = false);
-    }
-
-    public String[] getInputs() {
-        //Gets input for main menu
-
-        Scanner reader = new Scanner(System.in);
-
-        String[] inputs = new String[1];
-
-        boolean valid = false;
-        while (valid == false) {
-
-            System.out.println("Enter your name: (Q to quit.)");
-            inputs[0] = reader.nextLine();
-
-            inputs[0] = inputs[0].trim();
-
-            if (inputs[0].length() < 1) {
-                System.out.println("You must enter a non-blank value");
-                continue;
-            }
-
-            valid = true;
-        }
-        return inputs;
-    }
-
-    private boolean doAction(String[] inputs) {
-        GameControl gameControl = new GameControl();
-
-        String playersName = inputs[0];
-        Player player = gameControl.savePlayer(playersName);
-
-        if (player == null) {
-            System.out.println("Could not create the player. " + playersName + "Enter a different name.");
-            return false;
-        }
-
-        System.out.println("==================================================================\n"
-            + "Welcome to the Pioneer Trail " + playersName
-            + "\nLet's have a good time!\n"
-            + "==================================================================");
-
+            + "******************************************************************************************************************************\n"
+          
+            + "Enter your name:  (Press Q to exit)"
+          );
+          }
+      
+      /**
+       * 
+       * Not sure about the use of "trim" for the code
+       *  
+       */
+      
+     @Override
+    public boolean doAction(String inputs) {
+        String playersName = inputs;
+        Player player = GameControl.savePlayer(playersName);
+        
+        System.out.println(
+                  "==========================================================\n "
+                + "Welcome to the Pioneer Trail " + playersName.toUpperCase()
+                + "\n We hope you have a good time!\n"
+                + "===========================================================\n"
+        );
         MainMenuView mainMenuView = new MainMenuView();
         mainMenuView.displayMainMenuView();
-
         return true;
-    }
-       
-      
-     
-    
+    } 
 }
