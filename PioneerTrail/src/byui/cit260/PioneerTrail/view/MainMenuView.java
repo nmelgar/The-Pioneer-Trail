@@ -25,7 +25,7 @@ WHILE endOfView != true
 public class MainMenuView extends View {
     
     public MainMenuView(){
-    System.out.println("\nMAIN MENU, please choose and option: " +
+    super("\nMAIN MENU, please choose and option: " +
                     "\n  N: Start new game" +
                     "\n  R: Restart existing game" +
                     "\n  H: Get help on how to play the game" +

@@ -14,14 +14,31 @@ public class UsingResourcesView extends View{
  public UsingResourcesView(){
 
      super( 
-             
+             "++++++++++++++++++++++++++++++++++++++++++++++++++\n"
+            + "Resources are key in helping you throughout your Journey."
+            + "There are some resources that are available for your use."
+            + "Some required resources for your journey are:"
+            + "Food, Axe, Hammer, Spare wheels, Bullets, woods and Drinking Water."
+            + "Select the reources that you will need for your journey safely"
+            + "++++++++++++++++++++++++++++++++++++++++++++++++++\n"
+            + "\n Q Exist"
      );
              
     }
 
     @Override
     public boolean doAction(String inputs) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        String menuOptions = inputs.toUpperCase();    
+    switch(menuOptions) {
+        case "Q":
+            return true;
+        default:
+            System.out.println("Invalid input");
+    }
+     return false;
+    }
+        
     }
     
-}
+
