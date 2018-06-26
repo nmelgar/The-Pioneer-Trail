@@ -11,9 +11,9 @@ import java.util.Scanner;
  *
  * @author po
  */
-public class ResumeManuView {
+public class ResumeMenuView {
 
-    public void displayResumeManuView(){
+    public void displayResumeMenuView(){
         
         boolean endOfView = false;
         
