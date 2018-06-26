@@ -5,6 +5,7 @@
  */
 package byui.cit260.PioneerTrail.view;
 
+
 import java.util.Scanner;
 
 /**
@@ -50,7 +51,7 @@ public class HelpMenuView {
         while (valid == false) {
 
             System.out.println("\nHelp Menu" +
-                    "\n  G: What's the goal of the game" +
+                    "\n  G: Games goal" +
                     "\n  M: How to move" +
                     "\n  E: Estimate the resources" +
                     "\n  R: Using the resources" +
@@ -72,6 +73,7 @@ public class HelpMenuView {
     private boolean doAction(String[] inputs) {
         
         switch(inputs[0].toUpperCase()) {
+        
         case "G":
             gamesGoals();
             break;
@@ -93,6 +95,7 @@ public class HelpMenuView {
         return false;
     }
     
+       
     private void gamesGoals() {
         System.out.println("The purpose of the game"
                 + "\n is to move through the different locations,\n"

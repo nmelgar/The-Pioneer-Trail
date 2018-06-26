@@ -29,6 +29,7 @@ public class MainMenuView extends View {
                     "\n  N: Start new game" +
                     "\n  R: Restart existing game" +
                     "\n  H: Get help on how to play the game" +
+                    "\n  G: Games Goal" + 
                     "\n  Q: Exit");}   
     
     @Override
@@ -45,6 +46,9 @@ public class MainMenuView extends View {
         case "H":
             getHelp();
             break;
+        case "G":
+            gamesGoal();
+            break;
         case "Q":
             return true;
         default:
@@ -55,11 +59,14 @@ public class MainMenuView extends View {
     }
     
     private void startNewGame() {
+        
+        
         GameControl.createNewGame(PioneerTrail.getPlayer());
         
         GameMenuView gameMenuView = new GameMenuView();
         gameMenuView.displayGameMenuView();
         
+    
         }
         
     private void restartGame() {
@@ -68,6 +75,12 @@ public class MainMenuView extends View {
         StartExistingGameView startExistingGameView = new StartExistingGameView();
         startExistingGameView.displayStartExistingGameView();    
         * */
+    }
+    
+    private void gamesGoal(){
+        
+       GameGoalView gameGoalView = new GameGoalView();
+       gameGoalView.display();
     }
     
     private void getHelp() {
