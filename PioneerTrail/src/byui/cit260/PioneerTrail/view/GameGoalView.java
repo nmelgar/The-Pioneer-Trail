@@ -9,15 +9,14 @@ package byui.cit260.PioneerTrail.view;
  *
  * @author po
  */
-public class UsingResourcesView extends View{
-
- public UsingResourcesView(){
-
-     super( 
-             
-     );
-             
-    }
+public class GameGoalView extends View{
+    
+    public GameGoalView() {
+        
+        super(
+                
+        );
+        }
 
     @Override
     public boolean doAction(String inputs) {
