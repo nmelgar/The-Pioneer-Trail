@@ -7,7 +7,7 @@ package byui.cit260.PioneerTrail.view;
 
 /**
  *
- * @author po
+ *
  */
 public class GameGoalView extends View{
     
