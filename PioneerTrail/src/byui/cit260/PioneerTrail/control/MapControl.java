@@ -46,12 +46,12 @@ public class MapControl {
         System.out.println("Create Locations");
 
         Location[][] locations = new Location[noOfRows][noOfColumns];
-        for (int i = 0; i < (locations.length); i++) {
-            for (int z = 0; z < (locations[i].length); z++) {
+        for (int row = 0; row < (locations.length); row++) {
+            for (int column = 0; column < (locations[row].length); column++) {
                 Location location = new Location();
-                location.setColumn(z);
-                location.setRow(i);
-                locations[i][z] = location;
+                location.setColumn(column);
+                location.setRow(row);
+                locations[row][column] = location;
             }
 
         }
