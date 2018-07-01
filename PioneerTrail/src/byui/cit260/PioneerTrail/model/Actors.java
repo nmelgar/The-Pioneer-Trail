@@ -13,7 +13,7 @@ import java.io.Serializable;
  *
  * @author MMG
  */
-public enum Actors implements Serializable{
+public enum Actors {
     
     JohnSmith("John Smith", "He is the best friend of the main character", new Point(1, 1)),
     MaryJones("Mary Jones", "She is the sister of the main character", new Point(0, 1)),
@@ -27,6 +27,8 @@ public enum Actors implements Serializable{
     private final String description;
     private final Point coordinates;
 
+  
+    
     private Actors(String name, String description, Point coordinates) {
         this.name = name;
         this.description = description;

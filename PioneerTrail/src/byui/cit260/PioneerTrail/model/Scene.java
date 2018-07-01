@@ -19,10 +19,23 @@ public class Scene implements Serializable{
     private String actor;
     private String question;
     private String description;
-    private String typeOfSene;
+    private String typeOfScene;
     private Double time;
+    private String mapSymbol;
+    private Location location;
 
     public Scene() {
+    }
+    
+     public Location getLocation(){
+        return location; 
+     }
+    public String getMapSymbol(){
+        return mapSymbol;
+    }
+    
+    public void setMapSymbol(String mapSymbol){
+        this.mapSymbol = mapSymbol;
     }
     
     public String getNameScene() {
@@ -65,12 +78,12 @@ public class Scene implements Serializable{
         this.description = description;
     }
 
-    public String getTypeOfSene() {
-        return typeOfSene;
+    public String getTypeOfScene() {
+        return typeOfScene;
     }
 
-    public void setTypeOfSene(String typeOfSene) {
-        this.typeOfSene = typeOfSene;
+    public void setTypeOfScene(String typeOfScene) {
+        this.typeOfScene = typeOfScene;
     }
 
     public Double getTime() {
@@ -89,7 +102,7 @@ public class Scene implements Serializable{
         hash = 79 * hash + Objects.hashCode(this.actor);
         hash = 79 * hash + Objects.hashCode(this.question);
         hash = 79 * hash + Objects.hashCode(this.description);
-        hash = 79 * hash + Objects.hashCode(this.typeOfSene);
+        hash = 79 * hash + Objects.hashCode(this.typeOfScene);
         hash = 79 * hash + Objects.hashCode(this.time);
         return hash;
     }
@@ -121,7 +134,7 @@ public class Scene implements Serializable{
         if (!Objects.equals(this.description, other.description)) {
             return false;
         }
-        if (!Objects.equals(this.typeOfSene, other.typeOfSene)) {
+        if (!Objects.equals(this.typeOfScene, other.typeOfScene)) {
             return false;
         }
         if (!Objects.equals(this.time, other.time)) {
@@ -132,7 +145,7 @@ public class Scene implements Serializable{
 
     @Override
     public String toString() {
-        return "Scene{" + "nameScene=" + nameScene + ", sign=" + sign + ", actor=" + actor + ", question=" + question + ", description=" + description + ", typeOfSene=" + typeOfSene + ", time=" + time + '}';
+        return "Scene{" + "nameScene=" + nameScene + ", sign=" + sign + ", actor=" + actor + ", question=" + question + ", description=" + description + ", typeOfSene=" + typeOfScene + ", time=" + time + '}';
     }
     
     

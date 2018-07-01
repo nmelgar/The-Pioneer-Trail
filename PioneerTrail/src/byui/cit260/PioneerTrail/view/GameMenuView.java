@@ -5,6 +5,7 @@
  */
 package byui.cit260.PioneerTrail.view;
 
+import byui.cit260.PioneerTrail.model.Map;
 import java.util.Scanner;
 
 /**
@@ -130,7 +131,8 @@ public class GameMenuView {
     }
     
     private void viewMap() {
-        System.out.println("This is the map");
+        MapView mapView = new MapView();
+        mapView.displayMapView();
     }
         
     private void viewInventoryItems() {

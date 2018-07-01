@@ -20,8 +20,16 @@ public class PioneerTrail {
     /**
      * @param args the command line arguments
      */
-    private static Player player;
-    private static Game game;
+    private static Game currentGame = null;
+    private static Player player = null;
+    
+    private static Game currentGame(){
+        return currentGame;
+    }
+    
+    public static void setCurrentGame(Game currentGame){
+        PioneerTrail.currentGame = currentGame;
+    }
 
     public static Player getPlayer() {
         return player;
@@ -30,14 +38,6 @@ public class PioneerTrail {
     public static void setPlayer(Player player) {
         PioneerTrail.player = player;
     }
-
-    public static Game getGame() {
-        return game;
-    }
-
-    public static void setGame(Game game) {
-        PioneerTrail.game = game;
-    }
     
     public static void main(String[] args) {
       
@@ -45,6 +45,10 @@ public class PioneerTrail {
         startProgramView.display();
         
     }   
+
+    public static void setGame(Game game) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
       
     
 }
