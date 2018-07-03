@@ -5,10 +5,13 @@
  */
 package byui.cit260.PioneerTrail.control;
 
+import byui.cit260.PioneerTrail.model.Player;
+
 /**
  *
  * @author MMG
  */
 public class PlayerControl {
+   
     
 }
