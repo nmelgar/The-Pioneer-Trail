@@ -20,11 +20,14 @@ public class Map implements Serializable {
            
 //private Location locations;
     private Location currentLocation;
-    private int currentRow;
-    private int currentColumn;
+    private int currentRow = 0;
+    private int currentColumn = 0;
     private int rowCount;
     private int columnCount;
+    private Boolean visited;
     private String description;
+   
+  
     private Location[][] locations = new Location[columnCount][rowCount];
 
     public Map(Location currentLocation, int currentRow, int currentColumn, int rowCount, int columnCount, String description) {
@@ -34,9 +37,34 @@ public class Map implements Serializable {
         this.rowCount = rowCount;
         this.columnCount = columnCount;
         this.description = description;
+        this.visited = visited;
     }
     
     private ArrayList<Location> location = new ArrayList<Location>();
+
+    public Boolean getVisited() {
+        return visited;
+    }
+
+    public void setVisited(Boolean visited) {
+        this.visited = visited;
+    }
+
+    public Location[][] getLocations() {
+        return locations;
+    }
+
+    public void setLocations(Location[][] locations) {
+        this.locations = locations;
+    }
+
+    public ArrayList<Location> getLocation() {
+        return location;
+    }
+
+    public void setLocation(ArrayList<Location> location) {
+        this.location = location;
+    }
 
 
     public Location getCurrentLocation() {
