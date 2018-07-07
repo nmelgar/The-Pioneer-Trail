@@ -198,30 +198,30 @@ public class MapControl {
         Location[][] locations = map.getLocations();
 
        
-        locations[0][0].setScene(scenes[TypeOfScene.scene1.ordinal()]);
-        locations[0][1].setScene(scenes[TypeOfScene.scene2.ordinal()]);
-        locations[0][2].setScene(scenes[TypeOfScene.scene3.ordinal()]);
-        locations[0][3].setScene(scenes[TypeOfScene.scene4.ordinal()]);
-        locations[0][4].setScene(scenes[TypeOfScene.scene5.ordinal()]);
-        locations[1][0].setScene(scenes[TypeOfScene.scene6.ordinal()]);
-        locations[1][1].setScene(scenes[TypeOfScene.scene7.ordinal()]);
-        locations[1][2].setScene(scenes[TypeOfScene.scene8.ordinal()]);
-        locations[1][3].setScene(scenes[TypeOfScene.scene9.ordinal()]);
-        locations[1][4].setScene(scenes[TypeOfScene.scene10.ordinal()]);
-        locations[2][0].setScene(scenes[TypeOfScene.scene11.ordinal()]);
-        locations[2][1].setScene(scenes[TypeOfScene.scene12.ordinal()]);
-        locations[2][2].setScene(scenes[TypeOfScene.scene13.ordinal()]);
-        locations[2][3].setScene(scenes[TypeOfScene.scene14.ordinal()]);
-        locations[2][4].setScene(scenes[TypeOfScene.scene15.ordinal()]);
-        locations[3][0].setScene(scenes[TypeOfScene.scene16.ordinal()]);
-        locations[3][1].setScene(scenes[TypeOfScene.scene17.ordinal()]);
-        locations[3][2].setScene(scenes[TypeOfScene.scene18.ordinal()]);
-        locations[3][3].setScene(scenes[TypeOfScene.scene19.ordinal()]);
-        locations[3][4].setScene(scenes[TypeOfScene.scene20.ordinal()]);
-        locations[4][0].setScene(scenes[TypeOfScene.scene21.ordinal()]);
-        locations[4][1].setScene(scenes[TypeOfScene.scene22.ordinal()]);
-        locations[4][2].setScene(scenes[TypeOfScene.scene23.ordinal()]);
-        locations[4][3].setScene(scenes[TypeOfScene.scene24.ordinal()]);
-        locations[4][4].setScene(scenes[TypeOfScene.scene25.ordinal()]);
+        locations[0][0].setScene(scene[scene1.ordinal()]);
+        locations[0][1].setScene(scene[scene2.ordinal()]);
+        locations[0][2].setScene(scene[scene3.ordinal()]);
+        locations[0][3].setScene(scene[scene4.ordinal()]);
+        locations[0][4].setScene(scene[scene5.ordinal()]);
+        locations[1][0].setScene(scene[scene6.ordinal()]);
+        locations[1][1].setScene(scene[scene7.ordinal()]);
+        locations[1][2].setScene(scene[scene8.ordinal()]);
+        locations[1][3].setScene(scene[scene9.ordinal()]);
+        locations[1][4].setScene(scene[scene10.ordinal()]);
+        locations[2][0].setScene(scene[scene11.ordinal()]);
+        locations[2][1].setScene(scene[scene12.ordinal()]);
+        locations[2][2].setScene(scene[scene13.ordinal()]);
+        locations[2][3].setScene(scene[scene14.ordinal()]);
+        locations[2][4].setScene(scene[scene15.ordinal()]);
+        locations[3][0].setScene(scene[scene16.ordinal()]);
+        locations[3][1].setScene(scene[scene17.ordinal()]);
+        locations[3][2].setScene(scene[scene18.ordinal()]);
+        locations[3][3].setScene(scene[scene19.ordinal()]);
+        locations[3][4].setScene(scene[scene20.ordinal()]);
+        locations[4][0].setScene(scene[scene21.ordinal()]);
+        locations[4][1].setScene(scene[scene22.ordinal()]);
+        locations[4][2].setScene(scene[scene23.ordinal()]);
+        locations[4][3].setScene(scene[scene24.ordinal()]);
+        locations[4][4].setScene(scene[scene25.ordinal()]);
     }
 }

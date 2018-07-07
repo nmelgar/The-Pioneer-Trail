@@ -53,7 +53,7 @@ public class MapView {
                     System.out.print(leftIndicator + "**" + rightIndicator);
                 } else {
                     System.out.print(leftIndicator
-                            + locations[row][column].getScene().setSceneName()
+                            + locations[row][column].getScene().getSceneName()
                             + rightIndicator);
                 }
             }
