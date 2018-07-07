@@ -19,7 +19,6 @@ public class Map implements Serializable {
     }
            
 //private Location locations;
-    private Location currentLocation;
     private int currentRow = 0;
     private int currentColumn = 0;
     private int rowCount;
@@ -28,10 +27,9 @@ public class Map implements Serializable {
     private String description;
    
   
-    private Location[][] locations = new Location[columnCount][rowCount];
+    private Location[][] locations; /* = new Location[columnCount][rowCount]; */
 
-    public Map(Location currentLocation, int currentRow, int currentColumn, int rowCount, int columnCount, String description) {
-        this.currentLocation = currentLocation;
+    public Map(int currentRow, int currentColumn, int rowCount, int columnCount, String description) {
         this.currentRow = currentRow;
         this.currentColumn = currentColumn;
         this.rowCount = rowCount;
@@ -40,8 +38,7 @@ public class Map implements Serializable {
         this.visited = visited;
     }
     
-    private ArrayList<Location> location = new ArrayList<Location>();
-
+    
     public Boolean getVisited() {
         return visited;
     }
@@ -58,24 +55,11 @@ public class Map implements Serializable {
         this.locations = locations;
     }
 
-    public ArrayList<Location> getLocation() {
-        return location;
+     public Location getCurrentLocation() {
+        return locations[currentRow][currentColumn];
     }
 
-    public void setLocation(ArrayList<Location> location) {
-        this.location = location;
-    }
-
-
-    public Location getCurrentLocation() {
-        return currentLocation;
-    }
-
-    public void setCurrentLocation(Location currentLocation) {
-        this.currentLocation = currentLocation;
-    }
-
-    public int getCurrentRow() {
+       public int getCurrentRow() {
         return currentRow;
     }
 
@@ -118,7 +102,6 @@ public class Map implements Serializable {
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 37 * hash + Objects.hashCode(this.currentLocation);
         hash = 37 * hash + this.currentRow;
         hash = 37 * hash + this.rowCount;
         hash = 37 * hash + this.columnCount;
@@ -153,9 +136,7 @@ public class Map implements Serializable {
         if (!Objects.equals(this.description, other.description)) {
             return false;
         }
-        if (!Objects.equals(this.currentLocation, other.currentLocation)) {
-            return false;
-        }
+        
         return true;
     }
     
@@ -163,7 +144,7 @@ public class Map implements Serializable {
 
     @Override
     public String toString() {
-        return "Map{" + "currentLocation=" + currentLocation + ", currentRow=" + currentRow + ", currentColumn=" + currentColumn + ", rowCount=" + rowCount + ", columnCount=" + columnCount + ", description=" + description + '}';
+        return "Map{currentRow=" + currentRow + ", currentColumn=" + currentColumn + ", rowCount=" + rowCount + ", columnCount=" + columnCount + ", description=" + description + '}';
     }
 
       

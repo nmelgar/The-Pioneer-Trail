@@ -7,6 +7,7 @@ package byui.cit260.PioneerTrail.view;
 
 import byui.cit260.PioneerTrail.model.Map;
 import java.util.Scanner;
+import pioneertrail.PioneerTrail;
 
 /**
  displayMainMenuView() {
@@ -95,7 +96,8 @@ public class GameMenuView {
             exploreNewLocation();
             break;
         case "M":
-            moveNewLocation();
+            if (moveNewLocation())
+                viewMap();
             break;
         case "E":
             estimateResourcesNeeded();
@@ -150,8 +152,27 @@ public class GameMenuView {
         System.out.println("What location do you want to visit?");         
     }
     
-    private void moveNewLocation() {
-        System.out.println("What location do you want to move to?");         
+    private boolean moveNewLocation() {
+        /**System.out.println("What location do you want to move to?");*/   
+        Map map = PioneerTrail.currentGame().getMap();
+        int currentRow = map.getCurrentRow();
+        int currentColumn = map.getCurrentColumn();
+        if (currentColumn + 1 >= map.getColumnCount()){
+            if (currentRow +1 >= map.getRowCount()){
+                System.out.println("You arrived to Zion!");
+                return false;
+            }
+            else{
+                map.getCurrentLocation().setVisited(Boolean.TRUE);
+                map.setCurrentColumn(0);
+                map.setCurrentRow(currentRow + 1);
+            }
+        }
+        else{
+        map.getCurrentLocation().setVisited(Boolean.TRUE);
+        map.setCurrentColumn(currentColumn + 1);
+        }
+       return true;  
     }
     
     private void estimateResourcesNeeded() {

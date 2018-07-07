@@ -57,7 +57,8 @@ public static Player savePlayer(String playerName) {
         return player;
     }   
     public static int createNewGame(Player player){
-        Map map = createMap(5,5);  
+        ArrayList<Resource> items = createItems();
+        Map map = MapControl.createMap(5, 5, items);  
         
         if (player == null){
                 return -1;
@@ -65,50 +66,53 @@ public static Player savePlayer(String playerName) {
             
          Game game = new Game(); 
          game.setPlayer(player);
-         PioneerTrail.setGame(game);
-         Resource[] items = createItems();
-         
-            if (map == null){
-            } else {
+         PioneerTrail.setCurrentGame(game);
+                  
+        if (map == null){
                 return -2;
         }
          game.setMap(map);
          return 1;
     }
     
-    public static Resource[] createItems(){
-        Resource[] items = new Resource[6];
+    public static ArrayList<Resource> createItems(){
+        ArrayList<Resource> items = new ArrayList<Resource>();
                      
         Resource hammer = new Resource();
         hammer.setName("Hammer");
         hammer.setCount(1);
         hammer.setWeight(50);
+        items.add(hammer);
         
         Resource water = new Resource();
         water.setName("Water");
         water.setCount(2);
         water.setWeight(15);
+        items.add(water);
         
         Resource food = new Resource();
         food.setName("Food");
         food.setCount(10);
         food.setWeight(10);
+        items.add(food);
         
         Resource wood = new Resource();
         wood.setName("Wood");
         wood.setCount(3);
         wood.setWeight(30);
+        items.add(wood);
         
         Resource clothes = new Resource();
         clothes.setName("Clothes");
         clothes.setCount(10);
         clothes.setWeight(5);
-        
+        items.add(clothes);
        
         
       
-        
+        /**
         System.out.println("\n" + Arrays.toString(items));
+        **/
         return items;     
     }
 
