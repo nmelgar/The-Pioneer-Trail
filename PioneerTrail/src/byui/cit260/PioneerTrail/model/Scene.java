@@ -14,7 +14,7 @@ import java.util.Objects;
  */
 public class Scene implements Serializable{
     
-    private String nameScene;
+    private String sceneName;
     private String sign;
     private String actor;
     private String question;
@@ -38,12 +38,12 @@ public class Scene implements Serializable{
         this.mapSymbol = mapSymbol;
     }
     
-    public String getNameScene() {
-        return nameScene;
+    public String getSceneName() {
+        return sceneName;
     }
 
-    public void setNameScene(String nameScene) {
-        this.nameScene = nameScene;
+    public void setSceneName(String sceneName) {
+        this.sceneName = sceneName;
     }
 
     public String getSign() {
@@ -97,7 +97,7 @@ public class Scene implements Serializable{
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 79 * hash + Objects.hashCode(this.nameScene);
+        hash = 79 * hash + Objects.hashCode(this.sceneName);
         hash = 79 * hash + Objects.hashCode(this.sign);
         hash = 79 * hash + Objects.hashCode(this.actor);
         hash = 79 * hash + Objects.hashCode(this.question);
@@ -119,7 +119,7 @@ public class Scene implements Serializable{
             return false;
         }
         final Scene other = (Scene) obj;
-        if (!Objects.equals(this.nameScene, other.nameScene)) {
+        if (!Objects.equals(this.sceneName, other.sceneName)) {
             return false;
         }
         if (!Objects.equals(this.sign, other.sign)) {
@@ -145,7 +145,7 @@ public class Scene implements Serializable{
 
     @Override
     public String toString() {
-        return "Scene{" + "nameScene=" + nameScene + ", sign=" + sign + ", actor=" + actor + ", question=" + question + ", description=" + description + ", typeOfSene=" + typeOfScene + ", time=" + time + '}';
+        return "Scene{" + "nameScene=" + sceneName + ", sign=" + sign + ", actor=" + actor + ", question=" + question + ", description=" + description + ", typeOfSene=" + typeOfScene + ", time=" + time + '}';
     }
     
     

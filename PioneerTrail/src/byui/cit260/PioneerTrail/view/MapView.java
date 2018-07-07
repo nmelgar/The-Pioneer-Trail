@@ -9,12 +9,65 @@ package byui.cit260.PioneerTrail.view;
 import byui.cit260.PioneerTrail.model.Game;
 import byui.cit260.PioneerTrail.model.Location;
 import byui.cit260.PioneerTrail.model.Map;
+import byui.cit260.PioneerTrail.model.Scene;
 import java.util.Scanner;
+import pioneertrail.PioneerTrail;
 /**
  *
  * @author MMG
  */
 public class MapView {
+   
+    public void displayMapView() {
+        String leftIndicator;
+        String rightIndicator;
+        Game game = PioneerTrail.currentGame();
+        Map map = game.getMap();
+        Location[][] locations = game.getMap().getLocations();
+        System.out.println("Map");
+
+        System.out.println();
+        for (int row = 0; row < locations.length; row++) {
+            System.out.print(row + " ");
+            for (int column = 0; column < locations[row].length; column++) {
+                
+                leftIndicator = " ";
+                rightIndicator = " ";
+                if (locations[row][column] == map.getCurrentLocation()) {
+                    
+                    leftIndicator = "*";
+                    rightIndicator = "*";
+                } else if (locations[row][column].getVisited()) {
+                    
+                    leftIndicator = "<<"; 
+                    rightIndicator = ">>";
+                }
+                else if(locations[row][column].getVisited()){
+           
+                    leftIndicator = "<<"; 
+                    rightIndicator = ">>"; 
+                }
+                System.out.print("||");
+                if (locations[row][column].getScene() == null) {
+                    
+                    System.out.print(leftIndicator + "**" + rightIndicator);
+                } else {
+                    System.out.print(leftIndicator
+                            + locations[row][column].getScene().setSceneName()
+                            + rightIndicator);
+                }
+            }
+            System.out.println("||");
+            }
+        }
+    }
+
+
+  
+    
+    
+    
+    /**
     public void displayMapView(){
         
         boolean endOfView = false;
@@ -76,5 +129,5 @@ public class MapView {
     }
         
  }
-    
+  */  
 

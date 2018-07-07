@@ -65,127 +65,127 @@ public class MapControl {
         Scene[] scenes = new Scene[25];
         Scene scene1 = new Scene();
         scene1.setMapSymbol("NV");
-        scene1.setNameScene("Nauvoo");
+        scene1.setSceneName("Nauvoo");
         scene1.setDescription("");
         
         Scene scene2 = new Scene();
         scene2.setMapSymbol("SC");
-        scene2.setNameScene("Sugar Creek");
+        scene2.setSceneName("Sugar Creek");
         scene2.setDescription("");
         
         Scene scene3 = new Scene();
         scene3.setMapSymbol("RP");
-        scene3.setNameScene("Richardson's Point");
+        scene3.setSceneName("Richardson's Point");
         scene3.setDescription("");
         
         Scene scene4 = new Scene();
         scene4.setMapSymbol("CRC");
-        scene4.setNameScene("Chariton River Crossing");
+        scene4.setSceneName("Chariton River Crossing");
         scene4.setDescription("");
         
         Scene scene5 = new Scene();
         scene5.setMapSymbol("LC");
-        scene5.setNameScene("Locust Creek");
+        scene5.setSceneName("Locust Creek");
         scene5.setDescription("");
         
         Scene scene6 = new Scene();
         scene6.setMapSymbol("GG");
-        scene6.setNameScene("Garden Grove");
+        scene6.setSceneName("Garden Grove");
         scene6.setDescription("");
         
         Scene scene7 = new Scene();
         scene7.setMapSymbol("NR");
-        scene7.setNameScene("Nishnabotna River");
+        scene7.setSceneName("Nishnabotna River");
         scene7.setDescription("");
         
         Scene scene8 = new Scene();
         scene8.setMapSymbol("GE");
-        scene8.setNameScene("Grand Encampment");
+        scene8.setSceneName("Grand Encampment");
         scene8.setDescription("");
         
         Scene scene9 = new Scene();
         scene9.setMapSymbol("CB");
-        scene9.setNameScene("Council Bluffs");
+        scene9.setSceneName("Council Bluffs");
         scene9.setDescription("");
         
         Scene scene10 = new Scene();
         scene10.setMapSymbol("WQ");
-        scene10.setNameScene("Winter Quarters");
+        scene10.setSceneName("Winter Quarters");
         scene10.setDescription("");
         
         Scene scene11 = new Scene();
         scene11.setMapSymbol("ERC");
-        scene11.setNameScene("Elkhorn River Crossing");
+        scene11.setSceneName("Elkhorn River Crossing");
         scene11.setDescription("");
         
         Scene scene12 = new Scene();
         scene12.setMapSymbol("PR");
-        scene12.setNameScene("Plate River");
+        scene12.setSceneName("Plate River");
         scene12.setDescription("");
         
         Scene scene13 = new Scene();
         scene13.setMapSymbol("FK");
-        scene13.setNameScene("Fort Kearny");
+        scene13.setSceneName("Fort Kearny");
         scene13.setDescription("");
         
         Scene scene14 = new Scene();
         scene14.setMapSymbol("CP");
-        scene14.setNameScene("Confluence Point");
+        scene14.setSceneName("Confluence Point");
         scene14.setDescription("");
         
         Scene scene15 = new Scene();
         scene15.setMapSymbol("AH");
-        scene15.setNameScene("Ash Hollow");
+        scene15.setSceneName("Ash Hollow");
         scene15.setDescription("");
         
         Scene scene16 = new Scene();
         scene16.setMapSymbol("CR");
-        scene16.setNameScene("Chimney Rock");
+        scene16.setSceneName("Chimney Rock");
         scene16.setDescription("");
         
         Scene scene17 = new Scene();
         scene17.setMapSymbol("SB");
-        scene17.setNameScene("Scotts Bluff");
+        scene17.setSceneName("Scotts Bluff");
         scene17.setDescription("");
         
         Scene scene18 = new Scene();
         scene18.setMapSymbol("FL");
-        scene18.setNameScene("Fort Laramie");
+        scene18.setSceneName("Fort Laramie");
         scene18.setDescription("");
         
         Scene scene19 = new Scene();
         scene19.setMapSymbol("SR");
-        scene19.setNameScene("Sweetwater River");
+        scene19.setSceneName("Sweetwater River");
         scene19.setDescription("");
         
         Scene scene20 = new Scene();
         scene20.setMapSymbol("IR");
-        scene20.setNameScene("Independence Rock");
+        scene20.setSceneName("Independence Rock");
         scene20.setDescription("");
         
         Scene scene21 = new Scene();
         scene21.setMapSymbol("FB");
-        scene21.setNameScene("Fort Bridger");
+        scene21.setSceneName("Fort Bridger");
         scene21.setDescription("");
         
         Scene scene22 = new Scene();
         scene22.setMapSymbol("EC");
-        scene22.setNameScene("Echo Canyon");
+        scene22.setSceneName("Echo Canyon");
         scene22.setDescription("");
         
         Scene scene23 = new Scene();
         scene23.setMapSymbol("GPR");
-        scene23.setNameScene("Golden Pass Road");
+        scene23.setSceneName("Golden Pass Road");
         scene23.setDescription("");
         
         Scene scene24 = new Scene();
         scene24.setMapSymbol("EC");
-        scene24.setNameScene("Emigration Canyon");
+        scene24.setSceneName("Emigration Canyon");
         scene24.setDescription("");
         
         Scene scene25 = new Scene();
         scene25.setMapSymbol("Z");
-        scene25.setNameScene("Zion");
+        scene25.setSceneName("Zion");
         scene25.setDescription("");
        
         

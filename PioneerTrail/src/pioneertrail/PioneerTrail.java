@@ -23,7 +23,7 @@ public class PioneerTrail {
     private static Game currentGame = null;
     private static Player player = null;
     
-    private static Game currentGame(){
+    public static Game currentGame(){
         return currentGame;
     }
     
