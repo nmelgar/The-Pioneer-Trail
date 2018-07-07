@@ -194,34 +194,9 @@ public class MapControl {
 
     
 
-    private static void assignScenesToLocations(Map map, Scene[] scenes) {
+    private static void assignScenesToLocations() {
         Location[][] locations = map.getLocations();
 
        
-        locations[0][0].setScene(scenes[scene1.ordinal()]);
-        locations[0][1].setScene(scenes[scene2.ordinal()]);
-        locations[0][2].setScene(scenes[scene3.ordinal()]);
-        locations[0][3].setScene(scenes[scene4.ordinal()]);
-        locations[0][4].setScene(scenes[scene5.ordinal()]);
-        locations[1][0].setScene(scenes[scene6.ordinal()]);
-        locations[1][1].setScene(scenes[scene7.ordinal()]);
-        locations[1][2].setScene(scenes[scene8.ordinal()]);
-        locations[1][3].setScene(scenes[scene9.ordinal()]);
-        locations[1][4].setScene(scenes[scene10.ordinal()]);
-        locations[2][0].setScene(scenes[scene11.ordinal()]);
-        locations[2][1].setScene(scenes[scene12.ordinal()]);
-        locations[2][2].setScene(scenes[scene13.ordinal()]);
-        locations[2][3].setScene(scenes[scene14.ordinal()]);
-        locations[2][4].setScene(scenes[scene15.ordinal()]);
-        locations[3][0].setScene(scenes[scene16.ordinal()]);
-        locations[3][1].setScene(scenes[scene17.ordinal()]);
-        locations[3][2].setScene(scenes[scene18.ordinal()]);
-        locations[3][3].setScene(scenes[scene19.ordinal()]);
-        locations[3][4].setScene(scenes[scene20.ordinal()]);
-        locations[4][0].setScene(scenes[scene21.ordinal()]);
-        locations[4][1].setScene(scenes[scene22.ordinal()]);
-        locations[4][2].setScene(scenes[scene23.ordinal()]);
-        locations[4][3].setScene(scenes[scene24.ordinal()]);
-        locations[4][4].setScene(scenes[scene25.ordinal()]);
     }
 }
