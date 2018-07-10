@@ -138,10 +138,8 @@ public class GameMenuView {
     }
         
     private void viewInventoryItems() {
-        System.out.println("Item 1"
-                + "\n Item 2 \n"
-                + "\n Item 3 \n"
-                + "\n Item 4 \n");
+        ResourceMenuView resourceMenuView = new ResourceMenuView();
+        resourceMenuView.displayResourceMenuView();
         
     }
     private void purchaseNewSupplies() {

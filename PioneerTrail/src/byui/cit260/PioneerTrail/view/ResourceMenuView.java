@@ -40,7 +40,7 @@ public class ResourceMenuView {
         
         while (valid == false) {
             
-        System.out.println("\nRESOURCE MENU" +
+        System.out.println("\nINVENTORY LIST" +
                     "\n  F: Food" +
                     "\n  A: Axe" +
                     "\n  M: Hammer" +
@@ -101,7 +101,7 @@ public class ResourceMenuView {
     }
     
     
-    private void food() {
+    private static void food() {
         
         System.out.println("Selecting food as a necessity");
         

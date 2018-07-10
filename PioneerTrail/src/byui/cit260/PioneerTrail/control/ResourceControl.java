@@ -7,6 +7,7 @@ package byui.cit260.PioneerTrail.control;
 
 import byui.cit260.PioneerTrail.model.Resource;
 import byui.cit260.PioneerTrail.model.Player;
+import byui.cit260.PioneerTrail.model.Scene;
 
 
 
@@ -18,7 +19,36 @@ import byui.cit260.PioneerTrail.model.Player;
  */
 public class ResourceControl {
     
-    public static double energyProvided(Resource resource, Player player){          
+     private static Resource[] addResource() {
+        System.out.println("Resources");
+
+        Resource[] resources = new Resource[3];
+        Resource resource1 = new Resource();
+        resource1.setName("Hammer");
+        resource1.setWeight(5);
+        resource1.setType("Tool");
+        resources[0] = resource1;
+        
+        Resource resource2 = new Resource();
+        resource1.setName("Water");
+        resource1.setWeight(5);
+        resource1.setType("Supplies");
+        resources[1] = resource2;
+        
+        Resource resource3 = new Resource();
+        resource1.setName("Food");
+        resource1.setWeight(5);
+        resource1.setType("Food");
+        resources[2] = resource3;
+   
+     
+    return resources;
+     }
+    
+      
+    
+    
+    /**public static double energyProvided(Resource resource, Player player){          
     
         
        double resourceTotalEnergy = resource.getEnergyValue() * resource.getCount();
@@ -32,7 +62,7 @@ public class ResourceControl {
     return totalEnergy;    
     }
     
-    /**
+    
      * Find the sum of a list
 total (list): number
 BEGIN
