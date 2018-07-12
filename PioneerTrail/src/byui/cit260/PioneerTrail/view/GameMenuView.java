@@ -139,7 +139,7 @@ public class GameMenuView {
         
     private void viewInventoryItems() {
         ResourceMenuView resourceMenuView = new ResourceMenuView();
-        resourceMenuView.displayResourceMenuView();
+        resourceMenuView.getMenuString();
         
     }
     private void purchaseNewSupplies() {
