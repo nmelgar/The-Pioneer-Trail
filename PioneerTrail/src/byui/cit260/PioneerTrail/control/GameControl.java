@@ -71,6 +71,7 @@ public static Player savePlayer(String playerName) {
         if (map == null){
                 return -2;
         }
+        game.setResources(items);
          game.setMap(map);
          return 1;
     }

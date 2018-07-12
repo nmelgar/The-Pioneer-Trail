@@ -16,14 +16,16 @@ public class Game implements Serializable {
     
     private Player player;
     private Map map;
-    private String resources;
+    private ArrayList<Resource> resources;
     private String wagon;
     private String attribute;
 
     public Game(Player player, Map map, String resources, String wagon, String attribute) {
         this.player = player;
         this.map = map;
+        /**
         this.resources = resources;
+        * **/
         this.wagon = wagon;
         this.attribute = attribute;
     }
@@ -48,13 +50,16 @@ public class Game implements Serializable {
         this.map = map;
     }
 
-    public String getResources() {
+    public ArrayList<Resource> getResources() {
         return resources;
     }
 
-    public void setResources(String resources) {
+    public void setResources(ArrayList<Resource> resources) {
         this.resources = resources;
     }
+
+    
+    
 
     public String getWagon() {
         return wagon;

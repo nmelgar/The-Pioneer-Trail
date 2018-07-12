@@ -5,14 +5,23 @@
  */
 package byui.cit260.PioneerTrail.view;
 
+import byui.cit260.PioneerTrail.model.Game;
+import java.util.ArrayList;
 import java.util.Scanner;
+import pioneertrail.PioneerTrail;
+import byui.cit260.PioneerTrail.model.Resource;
 
 /**
  *
  * @author po
  */
-public class ResourceMenuView {
+public class ResourceMenuView extends View{
+
+    public ResourceMenuView() {
+         getMenuString();
+    }
     
+    /**
     public void displayResourceMenuView() {
     
         boolean endOfView = false;
@@ -31,7 +40,9 @@ public class ResourceMenuView {
             
         } while (endOfView == false);
     }
+    **/
     
+    /*
     private String[] getInputs() {
     
         Scanner reader = new Scanner(System.in);
@@ -65,10 +76,26 @@ public class ResourceMenuView {
         
         return inputs;
     }
+    **/
+     private void getMenuString(){
+         
+         promptMessage="";
+         int count = 0;
+                Game game = PioneerTrail.currentGame();
+                ArrayList<Resource> items = game.getResources();
+                for(Resource resource:items){
+                    
+                    promptMessage+= count + resource.getName();
+                    
+                }
+
+         
+         
+     }
     
-    
-    private boolean doAction(String[] inputs) {
-    
+    @Override 
+    public boolean doAction(String inputs) {
+    /*
         switch(inputs[0].toUpperCase()) {
         case "F":
             food();
@@ -96,7 +123,8 @@ public class ResourceMenuView {
         default:
             System.out.println("Invalid input");
         }
-        
+        */
+   
         return false;
     }
     
