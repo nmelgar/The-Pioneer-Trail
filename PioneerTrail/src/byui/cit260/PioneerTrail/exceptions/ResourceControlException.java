@@ -9,6 +9,26 @@ package byui.cit260.PioneerTrail.exceptions;
  *
  * @author MMG
  */
-public class ResourceControlException {
+public class ResourceControlException extends Exception{
+
+    public ResourceControlException() {
+    }
+
+    public ResourceControlException(String string) {
+        super(string);
+    }
+
+    public ResourceControlException(String string, Throwable thrwbl) {
+        super(string, thrwbl);
+    }
+
+    public ResourceControlException(Throwable thrwbl) {
+        super(thrwbl);
+    }
+
+    public ResourceControlException(String string, Throwable thrwbl, boolean bln, boolean bln1) {
+        super(string, thrwbl, bln, bln1);
+    }
+    
     
 }

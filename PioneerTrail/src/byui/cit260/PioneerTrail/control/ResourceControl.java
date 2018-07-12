@@ -5,6 +5,7 @@
  */
 package byui.cit260.PioneerTrail.control;
 
+import byui.cit260.PioneerTrail.exceptions.ResourceControlException;
 import byui.cit260.PioneerTrail.model.Resource;
 import byui.cit260.PioneerTrail.model.Player;
 import byui.cit260.PioneerTrail.model.Scene;
@@ -19,7 +20,7 @@ import byui.cit260.PioneerTrail.model.Scene;
  */
 public class ResourceControl {
     
-     private static Resource[] addResource() {
+     private static Resource[] addResource() throws ResourceControlException {
         System.out.println("Resources");
 
         Resource[] resources = new Resource[3];

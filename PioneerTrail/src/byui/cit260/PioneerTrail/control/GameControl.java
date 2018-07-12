@@ -5,6 +5,8 @@
  */
 package byui.cit260.PioneerTrail.control;
 
+import byui.cit260.PioneerTrail.exceptions.GameControlException;
+import byui.cit260.PioneerTrail.exceptions.MapControlException;
 import byui.cit260.PioneerTrail.model.Actors;
 import byui.cit260.PioneerTrail.model.Game;
 import byui.cit260.PioneerTrail.model.Map;
@@ -56,23 +58,23 @@ public static Player savePlayer(String playerName) {
         
         return player;
     }   
-    public static int createNewGame(Player player){
+    public static int createNewGame(Player player) throws GameControlException, MapControlException{
         ArrayList<Resource> items = createItems();
         Map map = MapControl.createMap(5, 5, items);  
         
         if (player == null){
-                return -1;
+                throw new GameControlException("Player can't be null");
             }
+        if (map == null){
+                throw new GameControlException("Map can't be null");
+        }   
             
-         Game game = new Game(); 
+         Game game = new Game();
+         game.setResources(items);
+         game.setMap(map);
          game.setPlayer(player);
          PioneerTrail.setCurrentGame(game);
-                  
-        if (map == null){
-                return -2;
-        }
-        game.setResources(items);
-         game.setMap(map);
+                 
          return 1;
     }
     

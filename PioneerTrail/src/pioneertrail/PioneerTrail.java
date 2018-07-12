@@ -5,6 +5,8 @@
  */
 package pioneertrail;
 
+import static byui.cit260.PioneerTrail.control.GameControl.createNewGame;
+import byui.cit260.PioneerTrail.exceptions.GameControlException;
 import byui.cit260.PioneerTrail.model.Actors;
 import byui.cit260.PioneerTrail.model.Game;
 import byui.cit260.PioneerTrail.model.Location;
@@ -31,6 +33,7 @@ public class PioneerTrail {
         PioneerTrail.currentGame = currentGame;
     }
 
+    
     public static Player getPlayer() {
         return player;
     }
@@ -44,6 +47,13 @@ public class PioneerTrail {
         StartProgramView startProgramView = new StartProgramView();
         startProgramView.display();
         
+        //Comment about weeks 11 
+        //try{ 
+        //    int result = createNewGame(player);
+        //}
+        //catch(GameControlException ex){
+        //    System.out.println(ex.getMessage());
+        //}
     }   
      
     

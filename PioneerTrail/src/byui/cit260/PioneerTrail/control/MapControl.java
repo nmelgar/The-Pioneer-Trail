@@ -5,6 +5,7 @@
  */
 package byui.cit260.PioneerTrail.control;
 
+import byui.cit260.PioneerTrail.exceptions.MapControlException;
 import byui.cit260.PioneerTrail.model.Location;
 import byui.cit260.PioneerTrail.model.Map;
 import byui.cit260.PioneerTrail.model.Resource;
@@ -17,13 +18,13 @@ import java.util.ArrayList;
  */
 public class MapControl {
     
- public static Map createMap(int noOfRows, int noOfColumns, ArrayList<Resource> items) {
+ public static Map createMap(int noOfRows, int noOfColumns, ArrayList<Resource> items) throws MapControlException {
 
         if (noOfRows < 0 || noOfColumns < 0) {
-            return null;
+            throw new MapControlException("Columns || Rows can't null");
         }
         if (items == null || items.size() < 1) {
-            return null;
+            throw new MapControlException("Items can't be null");
         }
         Map map = new Map();
         map.setRowCount(noOfRows);

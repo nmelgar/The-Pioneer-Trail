@@ -6,7 +6,11 @@
 package byui.cit260.PioneerTrail.view;
 
 import byui.cit260.PioneerTrail.control.GameControl;
+import byui.cit260.PioneerTrail.exceptions.GameControlException;
+import byui.cit260.PioneerTrail.exceptions.MapControlException;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import pioneertrail.PioneerTrail;
         
 
@@ -38,7 +42,15 @@ public class MainMenuView extends View {
     String menuOptions = inputs.toUpperCase();    
     switch(menuOptions) {
         case "N":
+    {
+        try {
             startNewGame();
+        } catch (GameControlException ex) {
+            Logger.getLogger(MainMenuView.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (MapControlException ex) {
+            Logger.getLogger(MainMenuView.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
             break;
         case "R":
             restartGame();
@@ -58,7 +70,7 @@ public class MainMenuView extends View {
         return false;
     }
     
-    private void startNewGame() {
+    private void startNewGame() throws GameControlException, MapControlException {
         
         
         GameControl.createNewGame(PioneerTrail.getPlayer());
