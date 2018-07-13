@@ -85,18 +85,130 @@ public class ResourceMenuView extends View{
          int count = 0;
                 Game game = PioneerTrail.currentGame();
                 ArrayList<Resource> items = game.getResources();
+                promptMessage += "Select the resource that you want more information about by entering the number:";
                 for(Resource resource:items){
                     
                     promptMessage+= count + resource.getName();
+                    count++;
+                    
+                    promptMessage+="\n";
                     
                 }
-
+                
+              /*  for (Resource resource:counts){
+                    
+                    promptMessage+= count + resource.getAmount();
+                    count++;
+                    
+                    promptMessage+="\n";
+                    
+                    
+                }
+*/
          
          
      }
+     
+     private void getCountString(){
+         
+         promptMessage="";
+         int count = 0;
+                Game game = PioneerTrail.currentGame();
+                ArrayList<Resource> items = game.getResources();
+                promptMessage += "Select the resource that you want more information about by entering the number:";
+                for(Resource resource:items){
+                    
+                    promptMessage+= count + resource.getCount();
+                    count++;
+                    
+                    promptMessage+="\n";
+                    
+                }
+     
+     }
+     
+     private void getWeightString(){
+         
+         promptMessage="";
+         int count = 0;
+                Game game = PioneerTrail.currentGame();
+                ArrayList<Resource> items = game.getResources();
+                promptMessage += "Select the resource that you want more information about by entering the number:";
+                for(Resource resource:items){
+                    
+                    promptMessage+= count + resource.getWeight();
+                    count++;
+                    
+                    promptMessage+="\n";
+                }
+     
+     }
+     
+     private void getTypeString(){
+         
+         promptMessage="";
+         int count = 0;
+                Game game = PioneerTrail.currentGame();
+                ArrayList<Resource> items = game.getResources();
+                promptMessage += "Select the resource that you want more information about by entering the number:";
+                for(Resource resource:items){
+                    
+                    promptMessage+= count + resource.getType();
+                    count++;
+                    
+                    promptMessage+="\n";
+                }
+     }
+     
+     private void getEnergyValueString(){
+         
+         promptMessage="";
+         int count = 0;
+                Game game = PioneerTrail.currentGame();
+                ArrayList<Resource> items = game.getResources();
+                promptMessage += "Select the resource that you want more information about by entering the number:";
+                for(Resource resource:items){
+                    
+                    promptMessage+= count + resource.getEnergyValue();
+                    count++;
+                    
+                    promptMessage+="\n";
+                }
+     }
+     
+     private void getResourceTotalEnergy(){
+         
+         promptMessage="";
+         int count = 0;
+                Game game = PioneerTrail.currentGame();
+                ArrayList<Resource> items = game.getResources();
+                promptMessage += "Select the resource that you want more information about by entering the number:";
+                for(Resource resource:items){
+                    
+                    promptMessage+= count + resource.getResourceTotalEnergy();
+                    count++;
+                    
+                    promptMessage+="\n";
+                }
+     
+     }
+     
+     
+     
     
     @Override 
     public boolean doAction(String inputs) {
+        int item = Integer.parseInt(inputs);
+         Game game = PioneerTrail.currentGame();
+                ArrayList<Resource> items = game.getResources();
+                Resource resource = items.get(item);
+                System.out.println("Name-"+resource.getName());
+                System.out.println("Count-"+resource.getCount());
+                System.out.println("Weight-"+resource.getWeight());
+                System.out.println("Type-"+resource.getType());
+                System.out.println("EnergyValue-"+resource.getEnergyValue());
+                System.out.println("ResourceTotalEnergy-"+resource.getResourceTotalEnergy());
+                
     /*
         switch(inputs[0].toUpperCase()) {
         case "F":

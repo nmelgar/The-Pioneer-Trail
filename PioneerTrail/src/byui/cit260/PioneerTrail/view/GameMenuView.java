@@ -86,9 +86,9 @@ public class GameMenuView {
         case "V":
             viewMap();
             break;
-     /*   case "I":
+        case "I":
             viewInventoryItems();
-            break; */
+            break; 
         case "P":
             purchaseNewSupplies();
             break;
@@ -137,14 +137,14 @@ public class GameMenuView {
         mapView.displayMapView();
     }
     
-   /*
+   
     private void viewInventoryItems() {
         ResourceMenuView resourceMenuView = new ResourceMenuView();
-        resourceMenuView.getMenuString(); 
+        resourceMenuView.display(); 
         
     }
-    */
     
+   
     private void purchaseNewSupplies() {
         System.out.println("Purchase Supplies :)");         
     }
