@@ -80,7 +80,7 @@ public class ResourceMenuView extends View{
     }
     **/
      private void getMenuString(){
-         
+         int heaviestItem = 0;
          promptMessage="";
          int count = 0;
                 Game game = PioneerTrail.currentGame();
@@ -90,7 +90,7 @@ public class ResourceMenuView extends View{
                     
                     promptMessage+= count + resource.getName();
                     count++;
-                    
+                    heaviestItem = Integer.max(heaviestItem, resource.getWeight());
                     promptMessage+="\n";
                     
                 }
@@ -105,7 +105,7 @@ public class ResourceMenuView extends View{
                     
                 }
 */
-         
+         promptMessage+="\nHeaviest Resource Weighs "+heaviestItem;
          
      }
      
