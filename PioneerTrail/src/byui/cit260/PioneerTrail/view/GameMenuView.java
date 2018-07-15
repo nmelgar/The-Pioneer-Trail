@@ -118,7 +118,7 @@ public class GameMenuView {
             huntForResource();
             break;
         case "S":
-            saveGame();
+            this.saveGame();
             break;
         case "H":
             help();
@@ -201,7 +201,8 @@ public class GameMenuView {
     }
     
     private void saveGame() {
-        System.out.println("Saving....");
+        SaveGameView saveGameView = new SaveGameView();
+        saveGameView.display();
        
     }
     private void help() {
