@@ -12,6 +12,7 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import pioneertrail.PioneerTrail;
+
         
 
 /**
@@ -31,6 +32,7 @@ public class MainMenuView extends View {
     public MainMenuView(){
     super("\nMAIN MENU, please choose and option: " +
                     "\n  N: Start new game" +
+                    "\n  C: Continue existing game" +
                     "\n  R: Restart existing game" +
                     "\n  H: Get help on how to play the game" +
                     "\n  G: Games Goal" + 
@@ -52,6 +54,8 @@ public class MainMenuView extends View {
         }
     }
             break;
+        case "C":
+            resumeGame();
         case "R":
             restartGame();
             break;
@@ -99,5 +103,10 @@ public class MainMenuView extends View {
         
         HelpMenuView helpMenuView = new HelpMenuView();
         helpMenuView.displayHelpMenuView();        
+    }
+
+    private void resumeGame() {
+        ResumeMenuView resumeMenuView = new ResumeMenuView();
+        resumeMenuView.displayResumeMenuView();
     }
 }

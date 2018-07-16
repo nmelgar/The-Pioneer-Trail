@@ -5,13 +5,17 @@
  */
 package byui.cit260.PioneerTrail.view;
 
+import byui.cit260.PioneerTrail.model.Game;
+import byui.cit260.PioneerTrail.model.Resource;
+import java.util.ArrayList;
 import java.util.Scanner;
+import pioneertrail.PioneerTrail;
 
 /**
  *
  * @author po
  */
-public class ResumeMenuView {
+public class ResumeMenuView extends View{
 
     public void displayResumeMenuView(){
         
@@ -19,7 +23,7 @@ public class ResumeMenuView {
         
         do {
            
-            String[] inputs = this.getInputs();
+            String inputs = this.getInputs();
 
             if (inputs == null) {
                 return;
@@ -27,12 +31,13 @@ public class ResumeMenuView {
                 return;
             }
 
-            endOfView = doAction(inputs);
+            endOfView = doAction(input);
             
         } while (endOfView == false);
+        
     }
     
-    private String[] getInputs(){
+    public String getInputs(){
         
         Scanner reader = new Scanner(System.in);
         String[] inputs = new String[1];
@@ -60,8 +65,30 @@ public class ResumeMenuView {
         return inputs;
     }
     
-    private boolean doAction(String[] inputs) {
+    private void getItemString(){
         
+         promptMessage="";
+         int count = 0;
+                Game game = PioneerTrail.currentGame();
+                ArrayList<Resource> items = game.getResources();
+                promptMessage += "Select the resource that you want more information about by entering the number:";
+                for(Resource resource:items){
+                    
+                    promptMessage+= count + resource.getType();
+                    count++;
+                    
+                    promptMessage+="\n";
+                }
+    
+    
+    }
+    
+    @Override
+    public boolean doAction(String inputs) {
+     
+        
+        
+        /*
         switch(inputs[0].toUpperCase()) {
         case "C":
             continueGame();
@@ -77,6 +104,7 @@ public class ResumeMenuView {
         default:
             System.out.println("Invalid input");
         }
+*/
         
         return false;
     }
@@ -90,7 +118,8 @@ public class ResumeMenuView {
     
     private void restartGame() {
         
-        System.out.println("restarting a new Game");
+        GameMenuView gameMenuView = new GameMenuView();
+        gameMenuView.displayGameMenuView();
         
     }
 
@@ -100,5 +129,6 @@ public class ResumeMenuView {
         helpMenuView.displayHelpMenuView(); 
         
     }
+
     
 }

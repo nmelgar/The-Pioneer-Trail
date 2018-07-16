@@ -61,6 +61,8 @@ public class MapView {
         System.out.println(map.getCurrentLocation().getScene().getDescription());
         
     }
+    
+    
 }
 
 /**
