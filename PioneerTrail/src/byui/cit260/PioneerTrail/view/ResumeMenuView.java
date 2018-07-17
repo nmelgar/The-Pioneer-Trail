@@ -7,13 +7,16 @@ package byui.cit260.PioneerTrail.view;
 
 import byui.cit260.PioneerTrail.model.Game;
 import byui.cit260.PioneerTrail.model.Resource;
+import byui.cit260.PioneerTrail.model.Map;
 import java.util.ArrayList;
 import java.util.Scanner;
 import pioneertrail.PioneerTrail;
 
 /**
+ * the objective of this menu is to display a location and resources needed for that 
+ * location.
  *
- * @author po
+ * @author 
  */
 public class ResumeMenuView extends View{
 
@@ -27,17 +30,20 @@ public class ResumeMenuView extends View{
 
             if (inputs == null) {
                 return;
+                /*
             } else if ("E".equals(inputs[0].toUpperCase())) {
                 return;
             }
 
-            endOfView = doAction(input);
+            endOfView = doAction(input
+                    */
             
         } while (endOfView == false);
+        return;
         
     }
     
-    public String getInputs(){
+    public void String[] getInputs(){
         
         Scanner reader = new Scanner(System.in);
         String[] inputs = new String[1];
@@ -85,6 +91,10 @@ public class ResumeMenuView extends View{
     
     @Override
     public boolean doAction(String inputs) {
+        int item = Integer.parseInt(inputs);
+         Game game = PioneerTrail.currentGame();
+                ArrayList<Resource> items = game.getResources();
+                Resource resource = items.get(item);
      
         
         
