@@ -30,13 +30,7 @@ public class ResumeMenuView extends View{
 
             if (inputs == null) {
                 return;
-                /*
-            } else if ("E".equals(inputs[0].toUpperCase())) {
-                return;
-            }
-
-            endOfView = doAction(input
-                    */
+             
             
         } while (endOfView == false);
         return;
