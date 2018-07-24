@@ -68,15 +68,39 @@ public class MapControl {
         Scene scene1 = new Scene();
         scene1.setMapSymbol("NV");
         scene1.setSceneName("Nauvoo");
-        scene1.setDescription("Nauvoo 'City Beautiful' (1839-46)");
-        scene1.setQuestion("");
+        scene1.setDescription("Nauvoo 'City Beautiful' (1839-46)"
+                + "\n Search these commandments, for they are "
+                + "\n true and faithful, and the prophecies and promises "
+                + "\n which are in them shall all be..."
+                + "\nA) fulfilled."
+                + "\nB) forbidden"
+                + "\nC) forgotten");
+        scene1.setQuestion("Search these commandments, for they are "
+                + "\n true and faithful, and the prophecies and promises "
+                + "\n which are in them shall all be..."
+                + "\nA) fulfilled."
+                + "\nB) forbidden"
+                + "\nC) forgotten");
         scenes[0] = scene1;
         
         Scene scene2 = new Scene();
         scene2.setMapSymbol("SC");
         scene2.setSceneName("Sugar Creek");
-        scene2.setDescription("Sugar Creek, 7 miles from Nauvoo");
-        scene2.setQuestion("");
+        scene2.setDescription("Sugar Creek, 7 miles from Nauvoo"
+                + "\n And he shall plant in the hearts of "
+                + "\n the children the promises made to the fathers, "
+                + "\n and the hearts of the children shall turn to "
+                + "\n their..."
+                + "\nA) brothers."
+                + "\nB) fathers"
+                + "\nC) uncles");
+        scene2.setQuestion("And he shall plant in the hearts of "
+                + "\n the children the promises made to the fathers, "
+                + "\n and the hearts of the children shall turn to "
+                + "\n their..."
+                + "\nA) brothers."
+                + "\nB) fathers"
+                + "\nC) uncles");
         scenes[1] = scene2;
         
         
