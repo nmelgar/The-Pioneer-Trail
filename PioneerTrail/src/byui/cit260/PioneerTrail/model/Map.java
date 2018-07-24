@@ -7,6 +7,7 @@ package byui.cit260.PioneerTrail.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Objects;
 
 /**
@@ -25,20 +26,149 @@ public class Map implements Serializable {
     private int columnCount;
     private Boolean visited;
     private String description;
+    private String question;
    
   
     private Location[][] locations; /* = new Location[columnCount][rowCount]; */
 
-    public Map(int currentRow, int currentColumn, int rowCount, int columnCount, String description) {
+    public Map(int currentRow, int currentColumn, int rowCount, int columnCount, String description, String question) {
         this.currentRow = currentRow;
         this.currentColumn = currentColumn;
         this.rowCount = rowCount;
         this.columnCount = columnCount;
         this.description = description;
         this.visited = visited;
+        this.question = question;
+    }
+
+    public int getCurrentRow() {
+        return currentRow;
+    }
+
+    public void setCurrentRow(int currentRow) {
+        this.currentRow = currentRow;
+    }
+    
+    public Location getCurrentLocation() {
+        return locations[currentRow][currentColumn];
+    }
+
+    public int getCurrentColumn() {
+        return currentColumn;
+    }
+
+    public void setCurrentColumn(int currentColumn) {
+        this.currentColumn = currentColumn;
+    }
+
+    public int getRowCount() {
+        return rowCount;
+    }
+
+    public void setRowCount(int rowCount) {
+        this.rowCount = rowCount;
+    }
+
+    public int getColumnCount() {
+        return columnCount;
+    }
+
+    public void setColumnCount(int columnCount) {
+        this.columnCount = columnCount;
+    }
+
+    public Boolean getVisited() {
+        return visited;
+    }
+
+    public void setVisited(Boolean visited) {
+        this.visited = visited;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
+    public Location[][] getLocations() {
+        return locations;
+    }
+
+    public void setLocations(Location[][] locations) {
+        this.locations = locations;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 19 * hash + this.currentRow;
+        hash = 19 * hash + this.currentColumn;
+        hash = 19 * hash + this.rowCount;
+        hash = 19 * hash + this.columnCount;
+        hash = 19 * hash + Objects.hashCode(this.visited);
+        hash = 19 * hash + Objects.hashCode(this.question);
+        hash = 19 * hash + Arrays.deepHashCode(this.locations);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Map other = (Map) obj;
+        if (this.currentRow != other.currentRow) {
+            return false;
+        }
+        if (this.currentColumn != other.currentColumn) {
+            return false;
+        }
+        if (this.rowCount != other.rowCount) {
+            return false;
+        }
+        if (this.columnCount != other.columnCount) {
+            return false;
+        }
+        if (!Objects.equals(this.description, other.description)) {
+            return false;
+        }
+        if (!Objects.equals(this.question, other.question)) {
+            return false;
+        }
+        if (!Objects.equals(this.visited, other.visited)) {
+            return false;
+        }
+        if (!Arrays.deepEquals(this.locations, other.locations)) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Map{" + "currentRow=" + currentRow + ", currentColumn=" + currentColumn + ", rowCount=" + rowCount + ", columnCount=" + columnCount + ", visited=" + visited + ", description=" + description + ", question=" + question + ", locations=" + locations + '}';
     }
     
     
+    
+    /**
     public Boolean getVisited() {
         return visited;
     }
@@ -109,6 +239,14 @@ public class Map implements Serializable {
         return hash;
     }
 
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -147,7 +285,7 @@ public class Map implements Serializable {
         return "Map{currentRow=" + currentRow + ", currentColumn=" + currentColumn + ", rowCount=" + rowCount + ", columnCount=" + columnCount + ", description=" + description + '}';
     }
 
-      
+      */
     
     
     /**

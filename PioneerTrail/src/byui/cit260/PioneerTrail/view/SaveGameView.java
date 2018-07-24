@@ -16,7 +16,9 @@ public class SaveGameView extends View{
 
     @Override
     public void display() {
-        this.console.println("Saving your game...would you like to continue?");
+        this.console.println("Saving your game...would you like to continue?"
+                + "\n Yes = Y "
+                + "\n No = N");
         String inputs = this.getInputs();
 
     }

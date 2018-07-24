@@ -69,13 +69,16 @@ public class MapControl {
         scene1.setMapSymbol("NV");
         scene1.setSceneName("Nauvoo");
         scene1.setDescription("Nauvoo 'City Beautiful' (1839-46)");
+        scene1.setQuestion("");
         scenes[0] = scene1;
         
         Scene scene2 = new Scene();
         scene2.setMapSymbol("SC");
         scene2.setSceneName("Sugar Creek");
         scene2.setDescription("Sugar Creek, 7 miles from Nauvoo");
+        scene2.setQuestion("");
         scenes[1] = scene2;
+        
         
         Scene scene3 = new Scene();
         scene3.setMapSymbol("RP");
@@ -83,6 +86,7 @@ public class MapControl {
         scene3.setDescription("Richardson's Point, 35 miles from Nauvoo" 
                 + "\n Suffering through 10 days of downpour, the Camp"
                 + "\n of Israel stalled here while awaiting improved weather.");
+        scene3.setQuestion("");
         scenes[2] = scene3;
         
         Scene scene4 = new Scene();
@@ -91,6 +95,7 @@ public class MapControl {
         scene4.setDescription("Chariton River Crossing, 80 miles from Nauvoo"
                 + "\n The main body of the pioneers chose to remain at Chariton"
                 + "\n to wait out some of the worst weather of the Iowa crossing");
+        scene4.setQuestion("");
         scenes[3] = scene4;
         
         Scene scene5 = new Scene();
@@ -101,6 +106,7 @@ public class MapControl {
                 + "\n reportedly penned the words to the song “All "
                 + "\n Is Well” after receiving word that his wife Diantha, "
                 + "\n still in Nauvoo, had given birth to a healthy baby boy.");
+        scene5.setQuestion("");
         scenes[4] = scene5;
         
         Scene scene6 = new Scene();
@@ -111,6 +117,7 @@ public class MapControl {
                 + "\n camp at this site, a sort of temporary settlement "
                 + "\n to serve the thousands of weary and destitute pioneers "
                 + "\n who would yet come this way. ");
+        scene6.setQuestion("");
         scenes[5] = scene6;
         
         Scene scene7 = new Scene();
@@ -120,6 +127,7 @@ public class MapControl {
                 + "\n The crossing of the Nishnabotna marks the meeting "
                 + "\n of two refugee peoples, the Latter-day Saints and "
                 + "\n the Potawatomi Indians.");
+        scene7.setQuestion("");
         scenes[6] = scene7;
         
         Scene scene8 = new Scene();
@@ -132,6 +140,7 @@ public class MapControl {
                 + "\n Iowa School for the Deaf, more than 500 volunteers "
                 + "\n of the Mormon Battalion officially mustered into the"
                 + "\n U.S. Army for service in the war with Mexico.");
+        scene8.setQuestion("");
         scenes[7] = scene8;
         
         Scene scene9 = new Scene();
@@ -144,6 +153,7 @@ public class MapControl {
                 + "\n across the Missouri River from Winter Quarters, Council "
                 + "\n Bluffs was one of the most significant Latter-day "
                 + "\n Saint settlements during the late 1840s and early 1850s.");
+        scene9.setQuestion("");
         scenes[8] = scene9;
         
         Scene scene10 = new Scene();
@@ -153,6 +163,7 @@ public class MapControl {
                 + "\n An instant city on the plains, Winter Quarters served"
                 + "\n as Church headquarters for less than a year, until "
                 + "\n the leadership moved west in 1847");
+        scene10.setQuestion("");
         scenes[9] = scene10;
         
         Scene scene11 = new Scene();
@@ -161,6 +172,7 @@ public class MapControl {
         scene11.setDescription("Elkhorn River Crossing, 293 miles from Nauvoo"
                 + "\n This was one of the major river crossings faced "
                 + "\n by westbound emigrants coming from Winter Quarters.");
+        scene11.setQuestion("");
         scenes[10] = scene11;
         
         Scene scene12 = new Scene();
@@ -169,6 +181,7 @@ public class MapControl {
         scene12.setDescription("Platte River, 305 miles from Nauvoo"
                 + "\n All emigrants who left the Missouri River "
                 + "\n traveled along the Platte River for hundreds of miles");
+        scene12.setQuestion("");
         scenes[11] = scene2;
         
         Scene scene13 = new Scene();
@@ -181,6 +194,7 @@ public class MapControl {
                 + "\n The first Fort Kearny, established in May 1846, was "
                 + "\n located on the Missouri River, some 50 miles south of"
                 + "\n Council Bluffs. It was abandoned in May 1848.");
+        scene13.setQuestion("");
         scenes[12] = scene13;
         
         Scene scene14 = new Scene();
@@ -193,6 +207,7 @@ public class MapControl {
                 + "\n attached an odometer (or roadometer) to the wheel of "
                 + "\n a wagon owned by Heber C. Kimball and driven by Philo "
                 + "\n Johnson. ");
+        scene14.setQuestion("");
         scenes[13] = scene14;
         
         Scene scene15 = new Scene();
@@ -201,6 +216,7 @@ public class MapControl {
         scene15.setDescription("Ash Hallow, 646 miles from Nauvoo"
                 + "\n Ash Hollow, its original beauty ruined by thousands"
                 + "\n of passing emigrants, was noted by countless diarists.");
+        scene15.setQuestion("");
         scenes[14] = scene15;
         
         Scene scene16 = new Scene();
@@ -211,6 +227,7 @@ public class MapControl {
                 + "\n of other Americans and emigrants in the mid- to late "
                 + "\n 1800s, crossed the Great American Plains and the Rocky"
                 + "\n Mountains in their quest for a better life in the West.");
+        scene16.setQuestion("");
         scenes[15] = scene16;
         
         Scene scene17 = new Scene();
@@ -220,6 +237,7 @@ public class MapControl {
                 + "\n Scotts Bluff is named for Hiram Scott, a Rocky "
                 + "\n Mountain Fur Company trapper abandoned here by "
                 + "\n his companions when he became ill. ");
+        scene17.setQuestion("");
         scenes[16] = scene17;
         
         Scene scene18 = new Scene();
@@ -230,6 +248,7 @@ public class MapControl {
                 + "\n Fort John. The original site was abandoned and Fort "
                 + "\n Laramie constructed nearby, taking its name from a "
                 + "\n French trapper, Jacques LaRamie.");
+        scene18.setQuestion("");
         scenes[17] = scene18;
         
         Scene scene19 = new Scene();
@@ -240,6 +259,7 @@ public class MapControl {
                 + "\n journey from the North Platte to the Sweetwater. "
                 + "\n Immigrants traveling to Salt Lake followed the "
                 + "\n Sweetwater for some distance toward South Pass.");
+        scene19.setQuestion("");
         scenes[18] = scene19;
         
         Scene scene20 = new Scene();
@@ -250,6 +270,7 @@ public class MapControl {
                 + "\n the countless names carved on it. Its use as a name registry "
                 + "\n was already well established by the time Brigham Young and "
                 + "\n the vanguard company passed it in June 1847.");
+        scene20.setQuestion("");
         scenes[19] = scene20;
         
         Scene scene21 = new Scene();
@@ -259,6 +280,7 @@ public class MapControl {
                 + "\n At this famous fort, the Oregon Trail swung north from "
                 + "\n Fort Bridger, while the Mormon Trail continued another "
                 + "\n 100 miles west to the Salt Lake Valley. ");
+        scene21.setQuestion("");
         scenes[20] = scene21;
         
         Scene scene22 = new Scene();
@@ -269,6 +291,7 @@ public class MapControl {
                 + "\n through before entering the Salt Lake Valley. Its high "
                 + "\n rock walls and narrow profile made it a veritable—and "
                 + "\n frequently noted—echo chamber.");
+        scene22.setQuestion("");
         scenes[21] = scene22;
         
         Scene scene23 = new Scene();
@@ -279,6 +302,7 @@ public class MapControl {
                 + "\n Lake City for $800 to construct a road through Big Canyon "
                 + "\n Creek in the Wasatch Mountains, just south of Emigration "
                 + "\n Canyon. ");
+        scene23.setQuestion("");
         scenes[22] = scene23;
         
         Scene scene24 = new Scene();
@@ -290,6 +314,7 @@ public class MapControl {
                 + "\n Big Mountain and the Salt Lake Valley, members of the "
                 + "\n Reed-Donner wagon train heading to California blazed "
                 + "\n its length and carved its first rough road.");
+        scene24.setQuestion("");
         scenes[23] = scene24;
         
         Scene scene25 = new Scene();
@@ -301,6 +326,7 @@ public class MapControl {
                 + "\n arduous journey. They had endured to the end of the Mormon"
                 + "\n Trail, and their participation in that memorable "
                 + "\n trek gave metaphor and meaning to life itself. ");
+        scene25.setQuestion("");
         scenes[24] = scene25;
         
         return scenes;
