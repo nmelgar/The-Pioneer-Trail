@@ -71,16 +71,16 @@ public class MapControl {
         scene1.setDescription("Nauvoo 'City Beautiful' (1839-46)"
                 + "\n **Search these commandments, for they are "
                 + "\n true and faithful, and the prophecies and promises "
-                + "\n which are in them shall all be..."
-                + "\nA) fulfilled."
-                + "\nB) forbidden"
-                + "\nC) forgotten");
+                + "\n which are in them shall all be __________"
+                + "\n   A) fulfilled."
+                + "\n   B) forbidden"
+                + "\n   C) forgotten");
         scene1.setQuestion("Search these commandments, for they are "
                 + "\n true and faithful, and the prophecies and promises "
-                + "\n which are in them shall all be..."
-                + "\nA) fulfilled."
-                + "\nB) forbidden"
-                + "\nC) forgotten");
+                + "\n which are in them shall all be __________"
+                + "\n   A) fulfilled."
+                + "\n   B) forbidden"
+                + "\n   C) forgotten");
         scenes[0] = scene1;
         
         Scene scene2 = new Scene();
@@ -91,16 +91,16 @@ public class MapControl {
                 + "\n the children the promises made to the fathers, "
                 + "\n and the hearts of the children shall turn to "
                 + "\n their..."
-                + "\nA) brothers."
-                + "\nB) fathers"
-                + "\nC) uncles");
+                + "\n   A) brothers."
+                + "\n   B) fathers"
+                + "\n   C) uncles");
         scene2.setQuestion("And he shall plant in the hearts of "
                 + "\n the children the promises made to the fathers, "
                 + "\n and the hearts of the children shall turn to "
                 + "\n their..."
-                + "\nA) brothers."
-                + "\nB) fathers"
-                + "\nC) uncles");
+                + "\n   A) brothers."
+                + "\n   B) fathers"
+                + "\n   C) uncles");
         scenes[1] = scene2;
         
         
@@ -112,14 +112,14 @@ public class MapControl {
                 + "\n of Israel stalled here while awaiting improved weather."
                 + "\n **Remember, remember that it is not the work "
                 + "\n of God that is ____________, but the work of men"
-                + "\n A)Restored"
-                + "\n B)Completed"
-                + "\n C)Frustrated");
+                + "\n   A)Restored"
+                + "\n   B)Completed"
+                + "\n   C)Frustrated");
         scene3.setQuestion("Remember, remember that it is not the work "
                 + "\n of God that is ____________, but the work of men"
-                + "\n A)Restored"
-                + "\n B)Completed"
-                + "\n C)Frustrated");
+                + "\n   A)Restored"
+                + "\n   B)Completed"
+                + "\n   C)Frustrated");
         scenes[2] = scene3;
         
         Scene scene4 = new Scene();
@@ -133,16 +133,16 @@ public class MapControl {
                 + "\n of that which thou hast done which is contrary to the"
                 + "\n commandment which I gave you, and thou art still ______, "
                 + "\n and art again called to the work;"
-                + "\n A)merciful, good"
-                + "\n B)good, chosen"
-                + "\n C)merciful, chosen");
+                + "\n   A)merciful, good"
+                + "\n   B)good, chosen"
+                + "\n   C)merciful, chosen");
         scene4.setQuestion("But remember, God is _________; therefore, repent"
                 + "\n of that which thou hast done which is contrary to the"
                 + "\n commandment which I gave you, and thou art still ______, "
                 + "\n and art again called to the work;"
-                + "\n A)merciful, good"
-                + "\n B)good, chosen"
-                + "\n C)merciful, chosen");
+                + "\n   A)merciful, good"
+                + "\n   B)good, chosen"
+                + "\n   C)merciful, chosen");
         scenes[3] = scene4;
         
         Scene scene5 = new Scene();
@@ -155,14 +155,14 @@ public class MapControl {
                 + "\n still in Nauvoo, had given birth to a healthy baby boy."
                 + "\n **Now behold, a marvelous _________ is"
                 + "\n about to come forth among the children of men."
-                + "\n A)work"
-                + "\n B)movie"
-                + "\n C)food");
+                + "\n   A)work"
+                + "\n   B)movie"
+                + "\n   C)food");
         scene5.setQuestion("Now behold, a marvelous _________ is"
                 + "\n about to come forth among the children of men."
-                + "\n A)work"
-                + "\n B)movie"
-                + "\n C)food");
+                + "\n   A)work"
+                + "\n   B)movie"
+                + "\n   C)food");
         scenes[4] = scene5;
         
         Scene scene6 = new Scene();
@@ -175,14 +175,14 @@ public class MapControl {
                 + "\n who would yet come this way. "
                 + "\n **Therefore, if ye have ________ to serve God "
                 + "\n ye are called to the work"
-                + "\n A)desires"
-                + "\n B)resistances"
-                + "\n C)cheers");
+                + "\n   A)desires"
+                + "\n   B)resistances"
+                + "\n   C)cheers");
         scene6.setQuestion("Therefore, if ye have ________ to serve God "
                 + "\n ye are called to the work"
-                + "\n A)desires"
-                + "\n B)resistances"
-                + "\n C)cheers");
+                + "\n   A)desires"
+                + "\n   B)resistances"
+                + "\n   C)cheers");
         scenes[5] = scene6;
         
         Scene scene7 = new Scene();
@@ -196,16 +196,16 @@ public class MapControl {
                 + "\n of God, see that ye serve him with all your heart, "
                 + "\n might, mind and strength, that ye may stand "
                 + "\n ____________ before God at the last day"
-                + "\n A)pure"
-                + "\n B)blameless"
-                + "\n C)spotless");
+                + "\n   A)pure"
+                + "\n   B)blameless"
+                + "\n   C)spotless");
         scene7.setQuestion("Therefore, O ye that embark in the service "
                 + "\n of God, see that ye serve him with all your heart, "
                 + "\n might, mind and strength, that ye may stand "
                 + "\n ____________ before God at the last day"
-                + "\n A)pure"
-                + "\n B)blameless"
-                + "\n C)spotless");
+                + "\n   A)pure"
+                + "\n   B)blameless"
+                + "\n   C)spotless");
         scenes[6] = scene7;
         
         Scene scene8 = new Scene();
@@ -221,15 +221,15 @@ public class MapControl {
                 + "\n **And faith, hope, ________ and love, with "
                 + "\n an eye single to the glory of God, qualify "
                 + "\n him for the work"
-                + "\n A)purity"
-                + "\n B)humility"
-                + "\n C)charity");
+                + "\n   A)purity"
+                + "\n   B)humility"
+                + "\n   C)charity");
         scene8.setQuestion("And faith, hope, ________ and love, with "
                 + "\n an eye single to the glory of God, qualify "
                 + "\n him for the work"
-                + "\n A)purity"
-                + "\n B)humility"
-                + "\n C)charity");
+                + "\n   A)purity"
+                + "\n   B)humility"
+                + "\n   C)charity");
         scenes[7] = scene8;
         
         Scene scene9 = new Scene();
@@ -244,14 +244,14 @@ public class MapControl {
                 + "\n Saint settlements during the late 1840s and early 1850s."
                 + "\n **Ask, and ye shall ________; knock, "
                 + "\n and it shall be opened unto you. "
-                + "\n A)forgive"
-                + "\n B)give"
-                + "\n C)receive");
+                + "\n   A)forgive"
+                + "\n   B)give"
+                + "\n   C)receive");
         scene9.setQuestion("Ask, and ye shall ________; knock, "
                 + "\n and it shall be opened unto you. "
-                + "\n A)forgive"
-                + "\n B)give"
-                + "\n C)receive");
+                + "\n   A)forgive"
+                + "\n   B)give"
+                + "\n   C)receive");
         scenes[8] = scene9;
         
         Scene scene10 = new Scene();
@@ -264,15 +264,15 @@ public class MapControl {
                 + "\n **Remember _______, virtue, knowledge, temperance,"
                 + "\n patience, brotherly kindness, godliness,"
                 + "\n charity, humility, diligence"
-                + "\n A)me"
-                + "\n B)faith"
-                + "\n C)goodnees");
+                + "\n   A)me"
+                + "\n   B)faith"
+                + "\n   C)goodnees");
         scene10.setQuestion("Remember _______, virtue, knowledge, temperance,"
                 + "\n patience, brotherly kindness, godliness,"
                 + "\n charity, humility, diligence"
-                + "\n A)me"
-                + "\n B)faith"
-                + "\n C)goodnees");
+                + "\n   A)me"
+                + "\n   B)faith"
+                + "\n   C)goodnees");
         scenes[9] = scene10;
         
         Scene scene11 = new Scene();
@@ -283,14 +283,14 @@ public class MapControl {
                 + "\n by westbound emigrants coming from Winter Quarters."
                 + "\n **For hereafter you shall be ordained and go"
                 + "\n forth and ________ my words unto the children of men."
-                + "\n A)deliver"
-                + "\n B)sell"
-                + "\n C)send");
+                + "\n   A)deliver"
+                + "\n   B)sell"
+                + "\n   C)send");
         scene11.setQuestion("For hereafter you shall be ordained and go"
                 + "\n forth and ________ my words unto the children of men."
-                + "\n A)deliver"
-                + "\n B)sell"
-                + "\n C)send");
+                + "\n   A)deliver"
+                + "\n   B)sell"
+                + "\n   C)send");
         scenes[10] = scene11;
         
         Scene scene12 = new Scene();
@@ -302,13 +302,13 @@ public class MapControl {
                 + "\n **And their testimony shall also go"
                 + "\n forth unto the condemnation of this generation if "
                 + "\n they _________ their hearts against them"
-                + "\n A)harden"
-                + "\n B)soften");
+                + "\n   A)harden"
+                + "\n   B)soften");
         scene12.setQuestion("And their testimony shall also go"
                 + "\n forth unto the condemnation of this generation if "
                 + "\n they _________ their hearts against them"
-                + "\n A)harden"
-                + "\n B)soften");
+                + "\n   A)harden"
+                + "\n   B)soften");
         scenes[11] = scene12;
         
         Scene scene13 = new Scene();
@@ -323,14 +323,14 @@ public class MapControl {
                 + "\n Council Bluffs. It was abandoned in May 1848."
                 + "\n **Oh, this __________ and stiffnecked "
                 + "\n generation—mine anger is kindled against them."
-                + "\n A)pure"
-                + "\n B)unclean"
-                + "\n C)unbelieving");
+                + "\n   A)pure"
+                + "\n   B)unclean"
+                + "\n   C)unbelieving");
         scene13.setQuestion("Oh, this __________ and stiffnecked "
                 + "\n generation—mine anger is kindled against them."
-                + "\n A)pure"
-                + "\n B)unclean"
-                + "\n C)unbelieving");
+                + "\n   A)pure"
+                + "\n   B)unclean"
+                + "\n   C)unbelieving");
         scenes[12] = scene13;
         
         Scene scene14 = new Scene();
@@ -347,16 +347,16 @@ public class MapControl {
                 + "\n wherewith I have commanded you; and if you do this, "
                 + "\n behold I grant unto you eternal life, even if you should "
                 + "\n be slain."
-                + "\n A)doctrines"
-                + "\n B)ordinances"
-                + "\n C)commandments ");
+                + "\n   A)doctrines"
+                + "\n   B)ordinances"
+                + "\n   C)commandments ");
         scene14.setQuestion("And that you be firm in keeping the ___________"
                 + "\n wherewith I have commanded you; and if you do this, "
                 + "\n behold I grant unto you eternal life, even if you should "
                 + "\n be slain."
-                + "\n A)doctrines"
-                + "\n B)ordinances"
-                + "\n C)commandments");
+                + "\n   A)doctrines"
+                + "\n   B)ordinances"
+                + "\n   C)commandments");
         scenes[13] = scene14;
         
         Scene scene15 = new Scene();
@@ -368,15 +368,15 @@ public class MapControl {
                 + "\n **I tell thee these things as a witness "
                 + "\n unto thee—that the _________ or the work which thou "
                 + "\n hast been writing are true."
-                + "\n A)testimonies"
-                + "\n B)words"
-                + "\n C)works");
+                + "\n   A)testimonies"
+                + "\n   B)words"
+                + "\n   C)works");
         scene15.setQuestion(" I tell thee these things as a witness "
                 + "\n unto thee—that the _________ or the work which thou "
                 + "\n hast been writing are true."
-                + "\n A)testimonies"
-                + "\n B)words"
-                + "\n C)works");
+                + "\n   A)testimonies"
+                + "\n   B)words"
+                + "\n   C)works");
         scenes[14] = scene15;
         
         Scene scene16 = new Scene();
@@ -390,15 +390,15 @@ public class MapControl {
                 + "\n **Did I not speak peace to your ________ concerning"
                 + "\n the matter? What greater witness can you have "
                 + "\n than from God?"
-                + "\n A)mind "
-                + "\n B)heart"
-                + "\n C)head");
+                + "\n   A)mind "
+                + "\n   B)heart"
+                + "\n   C)head");
         scene16.setQuestion("Did I not speak peace to your ________ concerning"
                 + "\n the matter? What greater witness can you have "
                 + "\n than from God?"
-                + "\n A)mind"
-                + "\n B)heart"
-                + "\n C)head");
+                + "\n   A)mind"
+                + "\n   B)heart"
+                + "\n   C)head");
         scenes[15] = scene16;
         
         Scene scene17 = new Scene();
@@ -412,16 +412,16 @@ public class MapControl {
                 + "\n be established by the testimony which shall be given, "
                 + "\n blessed are they, and then shall ye have joy in the "
                 + "\n fruit of your ___________."
-                + "\n A)works"
-                + "\n B)actions"
-                + "\n C)labors");
+                + "\n   A)works"
+                + "\n   B)actions"
+                + "\n   C)labors");
         scene17.setQuestion("But if they reject not my words, which shall "
                 + "\n be established by the testimony which shall be given, "
                 + "\n blessed are they, and then shall ye have joy in the "
                 + "\n fruit of your ___________."
-                + "\n A)works"
-                + "\n B)actions"
-                + "\n C)labors");
+                + "\n   A)works"
+                + "\n   B)actions"
+                + "\n   C)labors");
         scenes[16] = scene17;
         
         Scene scene18 = new Scene();
@@ -434,14 +434,14 @@ public class MapControl {
                 + "\n French trapper, Jacques LaRamie."
                 + "\n **Remember that without _________ you can do"
                 + "\n nothing; therefore ask in faith."
-                + "\n A)holiness"
-                + "\n B)love"
-                + "\n C)faith");
+                + "\n   A)holiness"
+                + "\n   B)love"
+                + "\n   C)faith");
         scene18.setQuestion("Remember that without _________ you can do"
                 + "\n nothing; therefore ask in faith."
-                + "\n A)holiness"
-                + "\n B)love"
-                + "\n C)faith");
+                + "\n   A)holiness"
+                + "\n   B)love"
+                + "\n   C)faith");
         scenes[17] = scene18;
         
         Scene scene19 = new Scene();
@@ -456,16 +456,16 @@ public class MapControl {
                 + "\n ___________ that I would give it unto you, "
                 + "\n when you took no thought save it was "
                 + "\n to ask me."
-                + "\n A)thought"
-                + "\n B)supposed"
-                + "\n C)believed");
+                + "\n   A)thought"
+                + "\n   B)supposed"
+                + "\n   C)believed");
         scene19.setQuestion("Behold, you have not understood; you have "
                 + "\n ___________ that I would give it unto you, "
                 + "\n when you took no thought save it was "
                 + "\n to ask me."
-                + "\n A)thought"
-                + "\n B)supposed"
-                + "\n C)believed");
+                + "\n   A)thought"
+                + "\n   B)supposed"
+                + "\n   C)believed");
         scenes[18] = scene19;
         
         Scene scene20 = new Scene();
@@ -478,14 +478,14 @@ public class MapControl {
                 + "\n the vanguard company passed it in June 1847."
                 + "\n **I will give them power that they may "
                 + "\n behold and ___________ these things as they are"
-                + "\n A)understand"
-                + "\n B)view"
-                + "\n C)read");
+                + "\n   A)understand"
+                + "\n   B)view"
+                + "\n   C)read");
         scene20.setQuestion("I will give them power that they may "
                 + "\n behold and ___________ these things as they are"
-                + "\n A)understand"
-                + "\n B)view"
-                + "\n C)read");
+                + "\n   A)understand"
+                + "\n   B)view"
+                + "\n   C)read");
         scenes[19] = scene20;
         
         Scene scene21 = new Scene();
@@ -499,16 +499,16 @@ public class MapControl {
                 + "\n must ask me if it be right, and if it is right I will "
                 + "\n cause that your ___________ shall burn within you; therefore, "
                 + "\n you shall feel that it is ___________."
-                + "\n A)bosom, wrong"
-                + "\n B)bosom, right"
-                + "\n C)mind, right");
+                + "\n   A)bosom, wrong"
+                + "\n   B)bosom, right"
+                + "\n   C)mind, right");
         scene21.setQuestion("you must study it out in your mind; then you "
                 + "\n must ask me if it be right, and if it is right I will "
                 + "\n cause that your ___________ shall burn within you; therefore, "
                 + "\n you shall feel that it is ___________."
-                + "\n A)bosom, wrong"
-                + "\n B)bosom, right"
-                + "\n C)mind, right");
+                + "\n   A)bosom, wrong"
+                + "\n   B)bosom, right"
+                + "\n   C)mind, right");
         scenes[20] = scene21;
         
         Scene scene22 = new Scene();
@@ -518,19 +518,19 @@ public class MapControl {
                 + "\n This was one of the last canyons the immigrants descended "
                 + "\n through before entering the Salt Lake Valley. Its high "
                 + "\n rock walls and narrow profile made it a veritable—and "
+                + "\n frequently noted—echo chamber."
                 + "\n **But if it be not right you shall have no such"
                 + "\n  __________, but you shall have a stupor of thought that "
                 + "\n shall cause you to forget the thing which is wrong"
-                + "\n A)ideas"
-                + "\n B)thoughts"
-                + "\n C)feelings"
-                + "\n frequently noted—echo chamber.");
+                + "\n   A)ideas"
+                + "\n   B)thoughts"
+                + "\n   C)feelings");
         scene22.setQuestion("But if it be not right you shall have no such"
                 + "\n  __________, but you shall have a stupor of thought that "
                 + "\n shall cause you to forget the thing which is wrong"
-                + "\n A)ideas"
-                + "\n B)thoughts"
-                + "\n C)feelings");
+                + "\n   A)ideas"
+                + "\n   B)thoughts"
+                + "\n   C)feelings");
         scenes[21] = scene22;
         
         Scene scene23 = new Scene();
@@ -543,14 +543,14 @@ public class MapControl {
                 + "\n Canyon."
                 + "\n **And the testimony of ______ witnesses "
                 + "\n will I send forth of my word"
-                + "\n A)four"
-                + "\n B)three"
-                + "\n C)five ");
+                + "\n   A)four"
+                + "\n   B)three"
+                + "\n   C)five ");
         scene23.setQuestion("And the testimony of ______ witnesses "
                 + "\n will I send forth of my word"
-                + "\n A)four"
-                + "\n B)three"
-                + "\n C)five");
+                + "\n   A)four"
+                + "\n   B)three"
+                + "\n   C)five");
         scenes[22] = scene23;
         
         Scene scene24 = new Scene();
@@ -566,16 +566,16 @@ public class MapControl {
                 + "\n yea, that you may conquer Satan, and that you may escape "
                 + "\n the hands of the servants of Satan that do uphold"
                 + "\n his work."
-                + "\n A)Read the scriptures"
-                + "\n B)Pray"
-                + "\n C)Love");
+                + "\n   A)Read the scriptures"
+                + "\n   B)Pray"
+                + "\n   C)Love");
         scene24.setQuestion("_______ always, that you may come off conqueror; "
                 + "\n yea, that you may conquer Satan, and that you may escape "
                 + "\n the hands of the servants of Satan that do uphold"
                 + "\n his work."
-                + "\n A)Read the scriptures"
-                + "\n B)Pray"
-                + "\n C)Love");
+                + "\n   A)Read the scriptures"
+                + "\n   B)Pray"
+                + "\n   C)Love");
         scenes[23] = scene24;
         
         Scene scene25 = new Scene();
